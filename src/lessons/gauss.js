@@ -12,8 +12,8 @@ const inBox = (box) => ([x, y]) => x >= 0 && y >= 0 && x <= box[0] && y <= box[1
 
 // ---------- figure 1: flux through a tilted area ----------
 const FX_BOX = [640, 290];
-const FX = { cx: 330, cy: 145, L: 200, gap: 20, E: 1000, A: 0.04 };
-const FX_YS = Array.from({ length: 13 }, (_, i) => 25 + i * FX.gap);
+const FX = { cx: 330, cy: 145, L: 200, gap: 12, E: 1000, A: 0.04 };
+const FX_YS = Array.from({ length: 21 }, (_, i) => FX.cy + (i - 10) * FX.gap);
 /** Field lines (at heights FX_YS) that cross the patch tilted by theta (deg). */
 const crossingLines = (theta) => FX_YS.filter((y) => Math.abs(y - FX.cy) < (FX.L / 2) * Math.cos(deg(theta)) - 1e-9);
 function fluxDraw(d, p) {
@@ -68,7 +68,7 @@ function gaussDraw(d, p) {
   const keep = inBox(GS_BOX);
   let lines;
   if (mode === 'each') {
-    lines = radialLines(charges, { perUnit: PER, length: 900 });
+    lines = radialLines(charges, { perUnit: PER, length: 1100 }); // longer than box diagonal + max radius, so every line exits
     for (const l of lines) {
       const vis = l.pts.filter(keep);
       const c = charges[l.of];

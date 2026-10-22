@@ -113,7 +113,7 @@ const TOPICS = [
     ['1/R<sub>par</sub> = 1/R<sub>1</sub> + 1/R<sub>2</sub>', 'Parallel: same voltage, currents add; total is less than the smallest.', '\u03a9', 'dc-circuits'],
     ['\u03a3I<sub>in</sub> = \u03a3I<sub>out</sub>', 'Junction rule: charge is conserved at every node.', 'A', 'dc-circuits'],
     ['\u03a3\u0394V<sub>loop</sub> = 0', 'Loop rule: energy is conserved around every closed loop.', 'V', 'dc-circuits'],
-    ['V<sub>term</sub> = \u2130 \u2212 Ir', 'A real battery loses Ir inside itself when current flows.', 'V', 'dc-circuits'],
+    ['V<sub>term</sub> = \u2130 \u2212 Ir', 'A real battery loses Ir inside itself when current flows.', 'V', 'current'],
     ['\u03c4 = RC', 'Time constant: after one \u03c4 a charging capacitor is 63% full, a discharging one 37% left.', 's', 'rc'],
     ['q = Q(1 \u2212 e<sup>\u2212t/\u03c4</sup>), q = Q<sub>0</sub>e<sup>\u2212t/\u03c4</sup>', 'Charging and discharging curves.', 'C', 'rc'],
   ]],
@@ -143,7 +143,6 @@ const TOPICS = [
     ['c = f\u03bb', 'Speed, frequency and wavelength of light: higher f means shorter \u03bb.', 'm/s', 'em-waves'],
     ['c = 1/\u221a(\u03b5<sub>0</sub>\u03bc<sub>0</sub>)', 'The speed of light follows from the electric and magnetic constants.', 'm/s', 'em-waves'],
     ['E = cB', 'Electric and magnetic field strengths in a wave (in phase, perpendicular).', 'V/m', 'em-waves'],
-    ['I = P/(4\u03c0r<sup>2</sup>)', 'Intensity from a point source spreads over a sphere: 1/r<sup>2</sup>.', 'W/m\u00b2', 'em-waves'],
     ['I = \u00bdc\u03b5<sub>0</sub>E<sub>0</sub><sup>2</sup>', 'Intensity grows as the square of the field amplitude.', 'W/m\u00b2', 'em-waves'],
     ['I = I<sub>0</sub>cos<sup>2</sup>\u03b8', 'Malus: polarized light through a polarizer at angle \u03b8.', 'W/m\u00b2', 'em-waves'],
   ]],
@@ -164,7 +163,7 @@ const TOPICS = [
     ['E = hf = hc/\u03bb', 'Photon energy: proportional to frequency. hc = 1240 eV\u00b7nm.', 'J or eV', 'photons'],
     ['K<sub>max</sub> = hf \u2212 \u03c6', 'Photoelectric effect: one photon frees one electron; brightness changes how many, not how fast.', 'eV', 'photons'],
     ['p = h/\u03bb', 'Photon momentum.', 'kg\u00b7m/s', 'photons'],
-    ['\u0394\u03bb = (h/mc)(1 \u2212 cos\u03c6)', 'Compton: an X-ray photon loses energy bouncing off an electron.', 'm', 'photons'],
+    ['\u0394\u03bb = (h/mc)(1 \u2212 cos\u03b8)', 'Compton: an X-ray photon loses energy bouncing off an electron at angle \u03b8.', 'm', 'photons'],
     ['\u03bb = h/p', 'de Broglie: any particle with momentum p acts as a wave of wavelength \u03bb.', 'm', 'atoms'],
     ['E<sub>n</sub> = \u221213.6 eV/n<sup>2</sup>', 'Hydrogen energy levels; n = 1 is the ground state.', 'eV', 'atoms'],
     ['hf = E<sub>upper</sub> \u2212 E<sub>lower</sub>', 'An atom emits or absorbs exactly the photon that matches a level gap.', 'eV', 'atoms'],
@@ -279,7 +278,7 @@ export default {
   render(root) {
     root.append(
       p('Keep this page open during the semester. Every equation below is listed with what it <b>relates</b>, how the result <b>scales</b> when you change an input, its SI units, and the chapter that explains it. Read an equation as a sentence: "the force between two charges grows with each charge and falls with the square of the distance" is more useful on an exam than the symbols alone.'),
-      p('Most of these equations are products and quotients of powers, so most questions about them are <b>ratio questions</b>: multiply one input by a factor and ask what happens to the output. The explorer below drills that habit. The rest are exponentials (RC circuits, RL circuits, radioactive decay), where equal time steps multiply the result by equal factors.'),
+      p('Most of these equations are products and quotients of powers, so most questions about them are <b>ratio questions</b>: multiply one input by a factor and ask what happens to the output. The explorer below drills that habit. The rest are exponentials (RC circuits, RL circuits, radioactive decay), where equal time steps multiply the decaying quantity by equal factors (for a charging capacitor, that is the charge still to go).'),
       h('h2', { text: 'The core eight' }),
       p('If you know these cold, with their words, most of the semester\u2019s problems have a starting point.'),
       equation({
@@ -296,7 +295,7 @@ export default {
       }),
       equation({
         name: 'Field and potential',
-        eq: `E = \u2212${frac('dV', 'dx')} &nbsp;&nbsp; (uniform: \u0394V = Ed)`,
+        eq: `E = \u2212${frac('dV', 'dx')} &nbsp;&nbsp; (uniform: |\u0394V| = Ed)`,
         says: 'The field is the <b>downhill slope</b> of the potential. Closely spaced equipotentials mean a strong field; E points toward lower V.',
         terms: [['E', 'electric field', 'V/m = N/C'], ['V', 'electric potential (energy per charge)', 'V = J/C'], ['d', 'distance along the field', 'm']],
       }),

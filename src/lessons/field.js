@@ -140,6 +140,8 @@ const PL = { x0: 90, x1: 410, top: 86, bot: 214, mid: 150, gun: 18, screen: 622,
 const PL_BOX = [640, 290];
 const PL_L = (PL.x1 - PL.x0) / PL.pxPerM; // 5 cm
 const PL_D = (PL.bot - PL.top) / PL.pxPerM; // 2 cm
+const PL_VIS = 75; // on-screen px/s per 10^7 m/s of real speed
+const PL_SLOW = (1e7 * PL.pxPerM) / PL_VIS; // real px/s over drawn px/s: how much the animation is slowed
 /** Sideways displacement (m, toward the + plate) after x metres past the plate entrance. */
 function sideways(r, x, v0) {
   if (x <= 0) return 0;
@@ -172,7 +174,7 @@ function platesDraw(d, p, t) {
   path.push([endX, yAt(endX)]);
   d.poly(path, { cls: 'ph-mute', dash: '4 5', w: 1.4 });
   // moving electron: visual speed proportional to v0
-  const vis = 75 * p.v; // px per second
+  const vis = PL_VIS * p.v; // px per second (p.v in units of 10^7 m/s)
   const travel = (endX - PL.gun) / vis;
   const tt = t % (travel + 0.9);
   const x = Math.min(endX, PL.gun + vis * tt);
@@ -432,7 +434,7 @@ export default {
     };
     root.append(
       figure(
-        { title: 'An electron through deflection plates', note: `Plates ${(PL_L * 100).toFixed(0)} cm long, ${(PL_D * 100).toFixed(0)} cm apart. Motion slowed down by about 10<sup>8</sup>. Halve the speed and the deflection grows <b>4\u00d7</b>: it spends twice as long in the field, and sideways distance goes as t<sup>2</sup>.` },
+        { title: 'An electron through deflection plates', note: `Plates ${(PL_L * 100).toFixed(0)} cm long, ${(PL_D * 100).toFixed(0)} cm apart. Motion slowed down by about ${fmt(PL_SLOW, 1)} (the same at every speed). Halve the speed and the deflection grows <b>4\u00d7</b>: it spends twice as long in the field, and sideways distance goes as t<sup>2</sup>.` },
         pstage,
         controlsRow(
           slider({ label: 'Plate voltage', min: 0, max: 600, step: 10, value: pst.V, fmt: (v) => `${v} V`, onInput: (v) => ((pst.V = v), predraw()) }),
@@ -444,7 +446,7 @@ export default {
     predraw();
 
     root.append(
-      p('Two things to notice in the readouts. The acceleration is around 10<sup>15</sup> m/s<sup>2</sup>, so <b>gravity is negligible</b> for electrons and ions in any realistic field. And a proton in the same plates would feel the same size force the other way, but with 1836 times the mass it would bend 1836 times less.'),
+      p('Two things to notice in the readouts. The acceleration is around 10<sup>15</sup> m/s<sup>2</sup>, so <b>gravity is negligible</b> for electrons and ions in any realistic field. And a proton entering the same plates at the same speed would feel the same size force the other way, but with 1836 times the mass it would bend 1836 times less.'),
       checkpoint(quiz),
     );
   },

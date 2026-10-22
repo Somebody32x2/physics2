@@ -293,7 +293,7 @@ const quiz = [
     prompt: 'A sample starts with N<sub>0</sub> radioactive nuclei. What fraction is left after three half-lives?',
     choices: ['1/3', '1/6', '1/8', '1/9'],
     answer: 2,
-    explain: `Each half-life halves what is left: \u00bd \u00d7 \u00bd \u00d7 \u00bd = <b>${remaining(1, 3, 1) === 1 / 8 ? '1/8' : remaining(1, 3, 1)}</b>. The decay is exponential, not linear: it does not lose a third each time, and it never reaches zero in a fixed time (at the start, 1/8 = ${Math.round(N0 * remaining(1, 3, 1))} of the sandbox\u2019s ${N0}).`,
+    explain: `Each half-life halves what is left: \u00bd \u00d7 \u00bd \u00d7 \u00bd = <b>${remaining(1, 3, 1) === 1 / 8 ? '1/8' : remaining(1, 3, 1)}</b>. The decay is exponential, not linear: it does not lose a third each time, and the formula never reaches zero (for the sandbox\u2019s ${N0} nuclei, 1/8 is ${Math.round(N0 * remaining(1, 3, 1))}).`,
   },
   {
     type: 'mcq',

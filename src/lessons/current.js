@@ -9,6 +9,8 @@ import { num, pickBox, seeded } from './circuit-kit.js';
 
 // ---------- figure 1: electrons drifting in a wire (live sandbox) ----------
 const DRIFT_PX = 40; // animation px/s per mm/s of real drift speed
+const WIRE_PX_PER_M = 260; // drawn wire length per meter
+const SPEEDUP = DRIFT_PX / (WIRE_PX_PER_M / 1000); // on-screen speed / real speed
 function makeDriftDraw() {
   let phase = 0;
   let lastT = 0;
@@ -18,7 +20,7 @@ function makeDriftDraw() {
     const dt = t - lastT;
     lastT = t;
     if (dt > 0 && dt < 0.2) phase += p.vd * DRIFT_PX * dt;
-    const Lpx = 260 * p.L;
+    const Lpx = WIRE_PX_PER_M * p.L;
     const hpx = 18 + 20 * p.A;
     const x0 = 320 - Lpx / 2;
     const x1 = 320 + Lpx / 2;
@@ -227,7 +229,7 @@ export default {
   render(root) {
     root.append(
       p('So far the charges sat still. Connect a battery across a wire and they move: the battery sets up an electric field inside the conductor, and the free electrons respond. The flow of charge is <b>current</b>, the amount of charge passing a point per second.'),
-      p('Two conventions trip people up here. Current direction is defined as the way <b>positive</b> charge would move: out of the battery\u2019s + terminal, through the circuit, into its \u2212 terminal. In a metal the moving charges are electrons, so they actually go the <b>other way</b>. Nothing in circuit analysis cares; just never mix the two in one problem. Second, the electrons move absurdly slowly, far below a millimeter per second on average. The light comes on instantly because the field travels through the wire at nearly light speed and starts every electron in the circuit moving at once.'),
+      p('Two conventions trip people up here. Current direction is defined as the way <b>positive</b> charge would move: out of the battery\u2019s + terminal, through the circuit, into its \u2212 terminal. In a metal the moving charges are electrons, so they actually go the <b>other way</b>. Nothing in circuit analysis cares; just never mix the two in one problem. Second, the electrons move absurdly slowly, typically well under a millimeter per second. The light comes on instantly because the field travels through the wire at nearly light speed and starts every electron in the circuit moving at once.'),
       equation({
         name: 'Current',
         eq: 'I = <span class="frac"><span>dQ</span><span>dt</span></span>',
@@ -252,7 +254,7 @@ export default {
     };
     root.append(
       figure(
-        { title: 'Inside a copper wire', note: 'Blue dots are free electrons; grey rings are the fixed copper ions. The electrons jiggle fast in random directions (thermal motion) and drift slowly to the left. The animation is sped up a few hundred times; the readouts are real. Try: widen the wire. The current grows, the drift speed does not: there are just more lanes.' },
+        { title: 'Inside a copper wire', note: `Blue dots are free electrons; grey rings are the fixed copper ions. The electrons jiggle fast in random directions (thermal motion) and drift slowly to the left. The drift is drawn about ${Math.round(SPEEDUP / 10) * 10} times faster than real; the readouts are real. Try: widen the wire. The current grows, the drift speed does not: there are just more lanes.` },
         stage,
         controlsRow(
           slider({ label: 'Voltage V', min: 0, max: 0.2, step: 0.01, value: st.V, fmt: (v) => `${v.toFixed(2)} V`, onInput: (v) => ((st.V = v), redraw()) }),

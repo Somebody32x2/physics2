@@ -363,7 +363,7 @@ export default {
 
     root.append(
       h('h2', { text: 'Young\u2019s double slit', class: 'reveal' }),
-      p('In 1801 Thomas Young sent one beam of light through two narrow slits and saw stripes of light and dark on a far screen: the experiment that settled that light is a wave. One beam through two slits guarantees the two waves start in step, so only the path difference to each point on the screen decides the brightness. Follow a point P up the screen:'),
+      p('In 1801 Thomas Young sent one beam of light through two narrow slits and saw stripes of light and dark on a far screen: the experiment that made the case that light is a wave. One beam through two slits guarantees the two waves start in step, so only the path difference to each point on the screen decides the brightness. Follow a point P up the screen:'),
     );
     const host = h('div');
     root.append(figure({ title: 'Path difference decides bright or dark', note: 'Not to scale: real slits are a fraction of a millimeter apart and the screen is meters away. The shaded stretch is the extra length \u0394 of the path from S<sub>2</sub>. Right: the two waves as they arrive at P, and their sum.' }, host));

@@ -216,7 +216,7 @@ export default {
   quiz,
   render(root) {
     root.append(
-      p('The last chapter took B as given. Here is where it comes from: <b>moving charges</b>. Every current makes a magnetic field, and every magnetic field you will meet in this course is made by currents (in a permanent magnet, the "currents" are electrons spinning and orbiting inside the atoms, all lined up).'),
+      p('The last chapter took B as given. Here is where it comes from: <b>moving charges</b>. Every current makes a magnetic field, and almost every magnetic field you will meet in this course is made by currents (in a permanent magnet, the "currents" are electrons spinning and orbiting inside the atoms, all lined up). The one exception, a changing electric field, comes up in the electromagnetic waves chapter.'),
       p('So moving charges both <b>make</b> magnetic fields and <b>feel</b> them, the same way static charges make and feel electric fields. The simplest source is a long straight wire. Its field lines are <b>circles</b> around the wire. To get the direction, grip the wire with your right hand, thumb along the current: your fingers curl the way B goes. That is the <b>right-hand grip rule</b>.'),
       equation({
         name: 'Field of a long straight wire',
@@ -229,7 +229,7 @@ export default {
           ['\u03bc<sub>0</sub>', '= 4\u03c0 \u00d7 10<sup>\u22127</sup>, the magnetic constant (the counterpart of \u03b5<sub>0</sub>)', 'T\u00b7m/A'],
         ],
       }),
-      p('For a sense of scale, 10 A at 2 cm makes ' + eq(`B = ${num(wireB(10, 0.02) * 1e6, 2)} \u03bcT`) + ', about twice Earth\u2019s field. That is why a compass near a power cord barely notices it, and why real electromagnets use many turns of wire.'),
+      p('For a sense of scale, 10 A at 2 cm makes ' + eq(`B = ${num(wireB(10, 0.02) * 1e6, 2)} \u03bcT`) + ', about twice Earth\u2019s field: enough to swing a compass held right next to a single wire. (A power cord barely affects a compass because its two conductors carry equal and opposite currents, and AC reverses 120 times a second.) It is also why real electromagnets use many turns of wire.'),
     );
 
     // Sandbox
@@ -299,7 +299,7 @@ export default {
           ['I', 'current in the wire', 'A'],
         ],
       }),
-      p('Wire, loop, and solenoid are all special cases of one general law. <b>Amp\u00e8re\u2019s law</b> plays the role for B that Gauss\u2019s law played for E: draw any closed loop (an "Amp\u00e8rian loop"), walk around it adding up the component of B along your path, and the total equals \u03bc<sub>0</sub> times the current poking through the loop.'),
+      p('For the wire and the solenoid there is a shortcut. <b>Amp\u00e8re\u2019s law</b> plays the role for B that Gauss\u2019s law played for E: draw any closed loop (an "Amp\u00e8rian loop"), walk around it adding up the component of B along your path, and the total equals \u03bc<sub>0</sub> times the current poking through the loop.'),
       equation({
         name: 'Amp\u00e8re\u2019s law',
         eq: '\u222e <span class="vec">B</span> \u00b7 d<span class="vec">\u2113</span> = \u03bc<sub>0</sub> I<sub>enc</sub>',

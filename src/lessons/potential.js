@@ -375,7 +375,7 @@ export default {
         {
           title: 'Sandbox: equipotential map',
           tools: [segmented([{ value: 'single', label: 'Single' }, { value: 'dipole', label: 'Dipole' }, { value: 'like', label: 'Like pair' }, { value: 'plates', label: 'Plates' }], preset, (v) => ((preset = v), (mcharges = PRESETS[v]()), mredraw()))],
-          note: 'Grey: equipotentials every 25 V (thicker: 0 V). Orange: field lines. Charges are \u00b11 nC; the box is 64 cm wide. Drag the small test charge to read V; drag the charges too. The field arrow always crosses the grey curves at right angles, pointing toward lower V, and the curves crowd together where the field is strong.',
+          note: 'Grey: equipotentials every 25 V (every 10 V for Plates; thicker: 0 V). Orange: field lines. Charges are \u00b11 nC; the box is 64 cm wide. Drag the small test charge to read V; drag the charges too. The field arrow always crosses the grey curves at right angles, pointing toward lower V, and the curves crowd together where the field is strong.',
         },
         mstage,
         mro,
@@ -384,7 +384,7 @@ export default {
     mredraw();
 
     root.append(
-      p('Two important cases. Between parallel plates the equipotentials are <b>evenly spaced planes</b>: V drops by the same amount every centimeter, which is what a uniform field means. And every <b>conductor</b> in equilibrium is an equipotential: E = 0 inside means no slope, so the whole piece of metal (surface included) sits at one potential. That is why a wire in a circuit diagram has a single voltage along its length.'),
+      p('Two important cases. Between parallel plates the equipotentials are <b>evenly spaced planes</b>: V drops by the same amount every centimeter, which is what a uniform field means. And every <b>conductor</b> in equilibrium is an equipotential: E = 0 inside means no slope, so the whole piece of metal (surface included) sits at one potential. A wire in a circuit diagram is treated the same way for a different reason: it carries current, so it is not in equilibrium, but its resistance is negligible, so almost no voltage drops along it.'),
       callout('warn', 'Classic mistakes', '<b>1.</b> "V = 0 means E = 0." No: V is the height, E is the slope. Halfway between +q and \u2212q the height is zero but the ground is steep. Likewise E = 0 halfway between two + charges, where V is not zero. <b>2.</b> Adding potentials as vectors, or forgetting their signs. V is a signed scalar. <b>3.</b> Getting electron directions backward: electrons go toward <b>higher</b> V.'),
       h('h2', { text: 'Energy conservation with charges' }),
       p('Because the electric force is conservative, K + U is constant for a charge moving in an electrostatic field. Falling through a potential difference turns qV into kinetic energy, exactly like a dropped ball turns mgh into \u00bdmv<sup>2</sup>. This is how every particle accelerator, X-ray tube and old TV tube works.'),

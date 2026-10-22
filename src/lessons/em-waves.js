@@ -195,7 +195,7 @@ const SIZES = [
   [1e-2, 'a fingertip'],
   [1, 'a person'],
   [1e2, 'a football field'],
-  [1e3, 'a city block or more'],
+  [1e3, 'about ten city blocks'],
 ];
 const sizeOf = (lam) => SIZES.reduce((best, s) => (Math.abs(Math.log10(s[0] / lam)) < Math.abs(Math.log10(best[0] / lam)) ? s : best))[1];
 const USES = {

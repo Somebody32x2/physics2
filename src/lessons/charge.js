@@ -128,7 +128,7 @@ export default {
   render(root) {
     root.append(
       p('Physics I was about forces in general. Physics II is about <b>one force</b>, the electromagnetic one, and everything it builds: fields, circuits, magnets, light. It starts with <b>charge</b>.'),
-      p('Charge comes in two kinds, called <b>positive</b> and <b>negative</b>. Like charges repel, unlike charges attract. Charge is <b>conserved</b> (you can move it around but never create net charge) and <b>quantized</b>: everything is a whole-number multiple of the electron\u2019s charge, ' + eq('e') + ' = 1.6 \u00d7 10<sup>\u221219</sup> C. Ordinary objects are neutral; "charging" something means moving a few electrons on or off it.'),
+      p('Charge comes in two kinds, called <b>positive</b> and <b>negative</b>. Like charges repel, unlike charges attract. Charge is <b>conserved</b> (you can move it around but never create net charge) and <b>quantized</b>: everything is a whole-number multiple of the elementary charge ' + eq('e') + ' = 1.6 \u00d7 10<sup>\u221219</sup> C (a proton carries +e, an electron \u2212e). Ordinary objects are neutral; "charging" something means moving a few electrons on or off it.'),
       p('The force between two point charges is <b>Coulomb\u2019s law</b>. It looks just like Newton\u2019s gravity, with charge in place of mass:'),
       equation({
         name: 'Coulomb\u2019s law',

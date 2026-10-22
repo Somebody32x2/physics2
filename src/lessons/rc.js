@@ -51,8 +51,8 @@ function rcCircuit(d, p, t, s) {
     : [[[b[0], bot], b, pivot]];
   paths.push([pivot, [cx, top], [cx, G.plateTop - 2]], [[cx, G.plateBot + 2], [cx, bot], [b[0], bot]]);
   if (charge) paths.push([[b[0], bot], [bx, bot]]);
-  // discharging: the charge-direction convention runs the other way along the loop, so flip the phase
-  for (const path of paths) flowDots(d, path, charge ? phase : -phase, { gap: 20 });
+  // phase falls while discharging, so the dots run backward along the charging paths: off the + plate, back through R
+  for (const path of paths) flowDots(d, path, phase, { gap: 20 });
 }
 function rcState(p, ts) {
   return p.mode === 'charge' ? { ...charging(ts, { R: p.R, C: p.C, emf: EMF }), q0: 0 } : { ...discharging(ts, { R: p.R, C: p.C, q0: p.C * EMF }), q0: p.C * EMF };

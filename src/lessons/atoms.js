@@ -192,7 +192,7 @@ function storyFrames() {
   });
   const L21 = transitionNM(2, 1);
   out.push(fr({ a: 2, b: 1, ax: 84 }, { found: foundB(4), prev: prevB(4) }, `Down to the ground state, 2 \u2192 1: the gap is huge, <b>${fmt(transitionEV(2, 1))} eV</b>, so \u03bb = <b>${nmStr(L21)}</b>, ultraviolet. Drops to n = 1 form the <b>Lyman</b> series (UV); drops to n = 3 form the <b>Paschen</b> series (infrared).`));
-  out.push(fr({ a: 2, b: 3, ax: 254 }, { found: foundB(4), prev: [] }, `Run it backwards. Shine white light through cool hydrogen: an electron in n = 2 can <b>absorb</b> only a photon that exactly fits a gap, such as the ${nmStr(B[0].nm)} one. Those wavelengths go missing, leaving <b>dark lines at the same places</b>. That is how we read the composition of stars.`));
+  out.push(fr({ a: 2, b: 3, ax: 254 }, { found: foundB(4), prev: [] }, `Run it backwards. Shine white light through hydrogen hot enough that many atoms sit in n = 2 (a star\u2019s atmosphere, around 10,000 K): an electron in n = 2 can <b>absorb</b> only a photon that exactly fits a gap, such as the ${nmStr(B[0].nm)} one. Those wavelengths go missing, leaving <b>dark lines at the same places</b>. That is how we read the composition of stars. (Cool hydrogen has almost every atom in n = 1, so it absorbs only the ultraviolet Lyman lines.)`));
   out.push(fr({ a: 1, b: Infinity, ax: 270 }, { found: [], prev: [] }, `Absorbing <b>${fmt(ionizationEV(1))} eV</b> or more (\u03bb \u2264 ${nmStr(photonNM(ionizationEV(1)))}) lifts the electron from n = 1 all the way to E = 0: the atom is <b>ionized</b>. That is the ionization energy of hydrogen. From n = 2 it would take only ${fmt(ionizationEV(2))} eV.`));
   return out;
 }
@@ -363,7 +363,7 @@ export default {
   quiz,
   render(root) {
     root.append(
-      p('Heat a gas or run a current through it and it glows, but not in a rainbow like a hot solid. Through a prism or grating you see a few sharp, bright lines. Every element has its own set, a <b>barcode</b>, and the same element absorbs the same wavelengths out of white light. Nineteenth-century physicists could measure these lines to five digits and had no idea why they existed.'),
+      p('Heat a gas or run a current through it and it glows, but not in a rainbow like a hot solid. Through a prism or grating you see a few sharp, bright lines. Every element has its own set, a <b>barcode</b>, and the same element can absorb the same wavelengths out of white light. Nineteenth-century physicists could measure these lines to five digits and had no idea why they existed.'),
       p('The photon idea from the last chapter says each line is a photon of one exact energy. So the atom itself can only have certain energies, and a line is the atom dropping from one allowed energy to a lower one. The spectrum is a direct read-out of the atom\u2019s <b>energy levels</b>.'),
     );
 
@@ -376,7 +376,7 @@ export default {
         {
           title: 'Every element has a barcode',
           tools: [segmented([{ value: false, label: 'Emission' }, { value: true, label: 'Absorption' }], false, (v) => ((absorbBC = v), bcShow()), { label: 'Spectrum type' })],
-          note: 'Visible lines only. Hydrogen\u2019s are computed from the Bohr model below; the others are measured. Switch to <b>Absorption</b>: white light through the cool gas loses exactly the same wavelengths.',
+          note: 'Visible lines only. Hydrogen\u2019s are computed from the Bohr model below; the others are measured. Switch to <b>Absorption</b>: white light through the gas loses exactly the same wavelengths, provided atoms sit in the lower level of each line (in hot gas, like a star\u2019s atmosphere). Cool gas absorbs only lines that end on the ground state, such as sodium\u2019s yellow pair.',
         },
         bcStage,
       ),

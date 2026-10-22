@@ -201,14 +201,15 @@ function gratingDraw(d, p) {
 
 // ---------- figure 5: double slit with finite slit width ----------
 const ELAM = 600e-9;
+const ENV_S = 0.1; // plotted sin(theta) range; the readout lists the same orders the plot marks
 function envDraw(d, p) {
   const x0 = 40;
   const w = 570;
-  const S = 0.1; // sin(theta) range
+  const S = ENV_S;
   const pl = d.plot({ x: x0, y: 34, w, h: 150, xr: [-S, S], yr: [0, 1.12], xLabel: 'sin\u03b8', ticksX: [[-0.1, '\u22120.1'], [-0.05, '\u22120.05'], [0], [0.05]] });
   pl.fn((s) => singleSlitI(Math.asin(s), p.a, ELAM), { cls: 'ph-plot2', w: 1.6, dash: '6 5' });
   pl.fn((s) => doubleSlitFiniteI(Math.asin(s), p.a, p.d, ELAM), { n: 1400, w: 1.8 });
-  for (const m of missingOrders(p.d, p.a, 40)) {
+  for (const m of missingOrders(p.d, p.a, 40)) { // d <= 200 um keeps every order with sin(theta) < ENV_S below 40
     for (const sg of [-1, 1]) {
       const s = (sg * m * ELAM) / p.d;
       if (Math.abs(s) < S) {
@@ -385,7 +386,7 @@ export default {
 
     root.append(
       h('h2', { text: 'Real double slits: interference inside a diffraction envelope', class: 'reveal' }),
-      p('Real slits have a width a as well as a separation d, so both effects happen at once. Each slit by itself spreads light into a single-slit pattern; the two slits\u2019 waves then interfere. The result is the double-slit fringes <b>multiplied</b> by the single-slit <b>envelope</b>. Where an interference maximum falls on a zero of the envelope, it vanishes: a <b>missing order</b>, which happens when d/a is a whole number.'),
+      p('Real slits have a width a as well as a separation d, so both effects happen at once. Each slit by itself spreads light into a single-slit pattern; the two slits\u2019 waves then interfere. The result is the double-slit fringes <b>multiplied</b> by the single-slit <b>envelope</b>. Where an interference maximum falls on a zero of the envelope, it vanishes: a <b>missing order</b>, which happens when an order m lands where m\u00b7a/d is a whole number (for d = 3a: m = \u00b13, \u00b16, \u2026).'),
     );
     const eStage = h('div', { class: 'stage' });
     const eView = new PhysView(eStage, { height: 240, box: [640, 214] });
@@ -393,8 +394,8 @@ export default {
     const ero = readouts([['r', 'd / a'], ['m', 'Missing orders']]);
     const eRedraw = () => {
       eView.show({ draw: envDraw, p: env, box: [640, 214] }, { animate: false });
-      const mo = missingOrders(env.d, env.a, 12);
-      ero.set({ r: (env.d / env.a).toFixed(2), m: mo.length ? mo.map((m) => `\u00b1${m}`).join(', ') : 'none (d/a not a whole number)' });
+      const mo = missingOrders(env.d, env.a, 40).filter((m) => (m * ELAM) / env.d < ENV_S);
+      ero.set({ r: (env.d / env.a).toFixed(2), m: mo.length ? mo.map((m) => `\u00b1${m}`).join(', ') : 'none in view' });
     };
     root.append(
       figure(

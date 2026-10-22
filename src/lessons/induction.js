@@ -169,7 +169,7 @@ function genFrames() {
   const f = (th, caption, spin = 0) => ({ draw: genDraw, p: { th, spin }, box: GBOX, live: Boolean(spin), caption });
   return [
     f(0, `The loop (seen end-on) <b>faces</b> the field: its normal n points along B, so the flux is at its <b>maximum</b>, \u03a6 = BA. Yet the emf is <b>zero</b>: the two sides are moving along the field lines (olive velocity arrows parallel to B), not across them.`),
-    f(45, `Turned 45\u00b0: \u03a6 = NBA cos 45\u00b0 = ${num(at(45).phi / (GEN.N * GEN.B * GEN.A), 2)} of its maximum and falling. The sides now cut across B at an angle, so \u2130 = ${num(at(45).emf / peak, 2)} of its peak.`),
+    f(45, `Turned 45\u00b0: \u03a6 = BA cos 45\u00b0 = ${num(at(45).phi / (GEN.N * GEN.B * GEN.A), 2)} of its maximum and falling. The sides now cut across B at an angle, so \u2130 = ${num(at(45).emf / peak, 2)} of its peak.`),
     f(90, `Edge-on to the field: <b>no flux at all</b>, but the flux is <b>changing fastest</b> here, and the sides cut straight across B. The emf <b>peaks</b>: \u2130 = NBA\u03c9 = <b>${num(peak, 2)} V</b> for 100 turns of a 10 cm \u00d7 10 cm coil in 0.2 T at 60 Hz.`),
     f(180, `Half a turn: the flux is maximum again but <b>negative</b> (B now enters the other face). It is momentarily not changing, so \u2130 = ${num(Math.abs(at(180).emf), 2)} V.`),
     f(270, 'Edge-on the other way: the emf peaks again with the <b>opposite sign</b>. The current in the loop has reversed. This is <b>alternating current</b>: it reverses twice per turn.'),
@@ -218,7 +218,7 @@ const quiz = [
   {
     type: 'input',
     id: 'induction.bar-emf',
-    prompt: `A metal bar slides at ${BAR_Q.v} m/s along rails ${BAR_Q.L * 100} cm apart, in a ${BAR_Q.B} T field perpendicular to the rails. What emf (in volts) is induced?`,
+    prompt: `A metal bar slides at ${BAR_Q.v} m/s along rails ${BAR_Q.L * 100} cm apart, in a ${BAR_Q.B} T field perpendicular to the plane of the rails. What emf (in volts) is induced?`,
     accept: (s) => Math.abs(parseFloat(s) - slidingBar(BAR_Q).emf) < 0.005,
     placeholder: 'volts',
     explain: () => {
@@ -244,7 +244,7 @@ export default {
   quiz,
   render(root) {
     root.append(
-      p('So far currents made magnetic fields. In 1831 Faraday found the reverse: a <b>changing</b> magnetic field makes a current. Move a magnet near a coil of wire and a current flows, with no battery anywhere. This is <b>electromagnetic induction</b>, and it is how essentially all electric power is generated.'),
+      p('So far currents made magnetic fields. In 1831 Faraday found the reverse: a <b>changing</b> magnetic field makes a current. Move a magnet near a coil of wire and a current flows, with no battery anywhere. This is <b>electromagnetic induction</b>, and it is how nearly all electric power is generated.'),
       p('The quantity that matters is the <b>magnetic flux</b> through a loop: how much field passes through the area it encloses. It is the same idea as electric flux in Gauss\u2019s law, but now through an open surface bounded by a wire.'),
       equation({
         name: 'Magnetic flux',

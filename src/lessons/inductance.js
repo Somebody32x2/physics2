@@ -266,7 +266,7 @@ export default {
   render(root) {
     root.append(
       p('A coil carrying current makes a magnetic field through itself. If the current changes, that flux changes, and by Faraday\u2019s law the coil induces an emf <b>in itself</b>. By Lenz\u2019s law that emf opposes the change: increase the current and the coil pushes back; cut the current and the coil tries to keep it going (which is why a switch on a big motor can spark). This self-opposing coil is an <b>inductor</b>.'),
-      p('How strongly a coil does this is its <b>inductance</b> L, measured in henries (H). It depends only on geometry: more turns, more area, and an iron core all increase it. A long solenoid has ' + eq('L = \u03bc<sub>0</sub>n<sup>2</sup>A\u2113') + ': n is squared because more turns make more flux <i>and</i> each turn picks up that flux.'),
+      p('How strongly a coil does this is its <b>inductance</b> L, measured in henries (H). It depends only on the coil\u2019s geometry and what fills it: more turns, more area, and an iron core all increase it. A long solenoid has ' + eq('L = \u03bc<sub>0</sub>n<sup>2</sup>A\u2113') + ': n is squared because more turns make more flux <i>and</i> each turn picks up that flux.'),
       equation({
         name: 'Self-induced emf of an inductor',
         eq: '\u2130<sub>L</sub> = \u2212L <span class="frac"><span>dI</span><span>dt</span></span>',
@@ -369,7 +369,7 @@ export default {
 
     root.append(
       callout('key', 'Two kinds of field energy, trading places', 'An LC circuit stores energy alternately in an <b>electric</b> field (\u00bdQ<sup>2</sup>/C, charge on the capacitor) and a <b>magnetic</b> field (\u00bdLI<sup>2</sup>, current in the coil). Charge is maximum when current is zero and vice versa, and the total stays constant.'),
-      p('Two consequences. First, <b>tuning</b>: an LC circuit responds strongly only to signals near its own frequency, so turning a radio dial (changing C) picks one station out of all those in the air. With AC, inductors and capacitors act like frequency-dependent resistors ("reactance"): an inductor fights fast changes, a capacitor blocks slow ones. Second, and bigger: in an LC circuit a changing E field and a changing B field keep regenerating each other. Take away the wires and the same trade happens in empty space. That is an <b>electromagnetic wave</b>, and it is where the next chapter starts.'),
+      p('Two consequences. First, <b>tuning</b>: an LC circuit responds strongly only to signals near its own frequency, so turning a radio dial (changing C) picks one station out of all those in the air. With AC, inductors and capacitors act like frequency-dependent resistors ("reactance"): an inductor fights fast changes, a capacitor blocks slow ones. Second, and bigger: the LC circuit trades energy between an electric and a magnetic field. In empty space a changing E makes B and a changing B makes E directly, with no wires, and the pair travels: an <b>electromagnetic wave</b>, where the next chapter starts.'),
       checkpoint(quiz),
     );
   },

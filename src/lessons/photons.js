@@ -312,6 +312,7 @@ function lampsDraw(d, p) {
 }
 
 const qF = 1.5e15;
+const H_GIVEN = 4.14e-15; // eV s, the rounded value the question gives
 const quiz = [
   {
     type: 'mcq',
@@ -332,7 +333,11 @@ const quiz = [
     prompt: 'Light of frequency 1.5 \u00d7 10<sup>15</sup> Hz hits zinc (\u03c6 = 4.31 eV). What is KE<sub>max</sub> of the ejected electrons, in eV? (h = 4.14 \u00d7 10<sup>\u221215</sup> eV\u00b7s)',
     placeholder: 'eV',
     accept: (s) => Math.abs(parseFloat(s) - kMax(qF, ZINC.phi)) < 0.06,
-    explain: `Photon energy hf = (4.14 \u00d7 10<sup>\u221215</sup> eV\u00b7s)(1.5 \u00d7 10<sup>15</sup> Hz) = ${fmt(photonEVfromF(qF))} eV. Subtract the work function: ${fmt(photonEVfromF(qF))} \u2212 ${fmt(ZINC.phi)} = <b>${fmt(kMax(qF, ZINC.phi))} eV</b>. The stopping potential would be ${fmt(kMax(qF, ZINC.phi))} V.`,
+    explain: () => {
+      const hf = H_GIVEN * qF;
+      const ke = hf - ZINC.phi;
+      return `Photon energy hf = (4.14 \u00d7 10<sup>\u221215</sup> eV\u00b7s)(1.5 \u00d7 10<sup>15</sup> Hz) = ${fmt(hf)} eV. Subtract the work function: ${fmt(hf)} \u2212 ${fmt(ZINC.phi)} = <b>${fmt(ke)} eV</b>. The stopping potential would be ${fmt(ke)} V.`;
+    },
   },
   {
     type: 'mcq',
@@ -477,7 +482,7 @@ export default {
           ['E, c', 'photon energy and the speed of light', 'J, m/s'],
         ],
       }),
-      p('<b>Compton scattering</b> (1923) showed this directly: X-rays bouncing off electrons come out with a <b>longer</b> wavelength, exactly as if a photon collided with an electron like two billiard balls and handed it some energy and momentum. The shift is ' + eq('\u0394\u03bb = (h/mc)(1 \u2212 cos \u03b8)') + ', at most twice h/mc = ' + (2 * COMPTON * 1e12).toFixed(2) + ' pm. That is negligible next to visible wavelengths but large for X-rays (~0.1 nm), which is why it shows up there.'),
+      p('<b>Compton scattering</b> (1923) showed this directly: X-rays bouncing off electrons come out with a <b>longer</b> wavelength, exactly as if a photon collided with an electron like two billiard balls and handed it some energy and momentum. The shift is ' + eq('\u0394\u03bb = (h/mc)(1 \u2212 cos \u03b8)') + ', at most twice h/mc = ' + (2 * COMPTON * 1e12).toFixed(2) + ' pm. That is negligible next to visible wavelengths but a measurable few percent for X-rays (~0.1 nm: up to ' + Math.round(((2 * COMPTON) / 0.1e-9) * 100) + '%), which is why it shows up there.'),
       p('So which is light, a wave or a stream of particles? Both descriptions are needed, and each experiment picks one: <b>interference and diffraction</b> need waves; <b>emission and absorption</b> (photoelectric, Compton) happen one photon at a time. The modern statement, <b>wave-particle duality</b>, is that the wave tells you <b>where</b> photons are likely to land, and each one lands as a single lump. Fire photons one at a time through a double slit and the dots slowly build up the interference pattern. The next chapter turns the idea around: particles like electrons have a wavelength too.'),
       checkpoint(quiz),
     );
