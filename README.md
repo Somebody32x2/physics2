@@ -55,6 +55,10 @@ Coolify app `physics2` (project SamuelShuster.com) builds the `Dockerfile` (ngin
 `samuelshuster.com/education/physics2`; pushes to `main` redeploy through a GitHub webhook. Listed on
 the education homepage (`Somebody32x2/education`, `subjects.js`).
 
+The site is part of the Education PWA: `index.html` links the homepage's `manifest.webmanifest` and registers
+its `sw.js` (scope `/education/`), which caches the site as you use it so it works offline. Anywhere without
+`/education/` above the site (locally, GitHub Pages) those requests 404 and registration fails quietly.
+
 ## License
 
 MIT
