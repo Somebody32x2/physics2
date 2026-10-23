@@ -2,6 +2,7 @@ import { h, icon } from './ui/dom.js';
 import { Player } from './ui/player.js';
 import { figure } from './ui/figure.js';
 import { progress } from './ui/progress.js';
+import { mountNarration, stopNarration } from './ui/narrator.js';
 import { site } from './site.js';
 import { chapters, hero, legend } from './lessons/index.js';
 
@@ -128,6 +129,7 @@ function renderChapter(ch) {
   );
   main.replaceChildren(article);
   ch.render(article);
+  mountNarration(ch, article);
   const prev = chapters[i - 1];
   const next = chapters[i + 1];
   article.append(
@@ -155,6 +157,7 @@ const currentId = () => chapters.find((c) => location.hash === `#/${c.id}`)?.id 
 function route() {
   const ch = chapters.find((c) => location.hash === `#/${c.id}`);
   document.body.classList.remove('nav-open');
+  stopNarration();
   if (ch) renderChapter(ch);
   else renderHome();
   renderNav(currentId());

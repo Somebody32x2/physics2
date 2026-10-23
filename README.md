@@ -40,6 +40,7 @@ src/core/phys-view.js       PhysView: draws a frame { draw(d, p, t), p, box, liv
 src/core/draw.js            Draw: arrows, charges, field lines, circuit symbols, lenses, mini plots
 src/ui/                     Player (stepper), checkpoint quizzes, figure/callout, sliders, equation cards
 tests/*.test.js             node:test checks of the models (textbook values, limits, conservation laws)
+tts/                        narration scripts and the clip generator (not deployed); audio/ holds the clips
 ```
 
 ## Extending
@@ -48,6 +49,24 @@ Add a chapter: write `src/lessons/<id>.js` exporting `{ id, title, group, blurb,
 put its physics in `src/model/`, and list it in `src/lessons/index.js`. A figure is a list of frames
 for `PhysView`; frames sharing the same `draw` function glide between their numeric params, and
 `live: true` frames animate with a clock. Quiz answers come from the model, never from memory.
+
+## Narration (Listen)
+
+Chapters with a script in `tts/script/<chapter id>.js` get a **Listen** button: AI narration (Gemini
+3.8 Flash TTS, voices Achird and Charon, alternating by section) that highlights each paragraph and steps the
+figures as it goes. The scripts are written to be heard: math is spoken ("E equals sigma over epsilon naught"),
+and Gemini cues are inline (`<short pause>`, CAPS for stress); each block points at its page text with `at`.
+
+```sh
+node tts/gen.mjs --dry        # what is missing, no calls
+node tts/gen.mjs              # record missing clips (needs ~/.config/gemini.key and ffmpeg), commit audio/
+```
+
+The site only plays committed files (`audio/<hash>.mp3` and `audio/<chapter>.json`); it never calls an API.
+Clips are named by a hash of the whole request, so nothing is ever generated twice: re-runs skip existing
+clips, and editing one section re-records only that section. One API call per section, because the free tier
+allows 10 requests a day; `--max N` caps a run. See the comment at the top of `tts/gen.mjs`. Blocks without a
+recording yet are read by the browser's own voice. `tests/narration.test.js` checks every `at` still exists.
 
 ## Deploy
 

@@ -1,0 +1,200 @@
+{
+ "chapter": "charge",
+ "blocks": [
+  {
+   "section": 0,
+   "voice": "Charon",
+   "at": [
+    "Physics I was about forces in general"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "Physics One was about forces in general. Physics Two is about one force, the electromagnetic one, and everything it builds: fields, circuits, magnets, light. And it all starts with charge.",
+   "src": null,
+   "start": null,
+   "end": null,
+   "dur": null
+  },
+  {
+   "section": 0,
+   "voice": "Charon",
+   "at": [
+    "Charge comes in two kinds"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "Charge comes in two kinds, called positive and negative. Like charges repel; unlike charges attract. Charge is conserved: you can move it around, but you can never create net charge. And it's quantized: every charge is a whole-number multiple of the elementary charge, e, which is one point six times ten to the minus nineteen coulombs. A proton carries plus e, and an electron, minus e. Ordinary objects are neutral, so \"charging\" something just means moving a few electrons on or off it.",
+   "src": null,
+   "start": null,
+   "end": null,
+   "dur": null
+  },
+  {
+   "section": 0,
+   "voice": "Charon",
+   "at": [
+    "The force between two point charges",
+    "The force grows with each charge"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "The force between two point charges is Coulomb's law, and it looks just like Newton's gravity, with charge in place of mass. F equals k, times the size of q one, times the size of q two, all over r squared. So the force grows with each charge, and falls off with the square of the distance between them. It acts along the line joining the charges: repulsive for like signs, attractive for unlike. The constant k is about nine times ten to the nine, and it's really just there to make the units work.",
+   "src": null,
+   "start": null,
+   "end": null,
+   "dur": null
+  },
+  {
+   "section": 1,
+   "voice": "Achird",
+   "at": [],
+   "sel": null,
+   "figure": "How the force scales",
+   "step": 0,
+   "text": "Let's see how that force scales. Here are two equal positive charges, a distance r naught apart. Call the force on each one F naught. Like charges repel, so each arrow points away from the other charge.",
+   "src": null,
+   "start": null,
+   "end": null,
+   "dur": null
+  },
+  {
+   "section": 1,
+   "voice": "Achird",
+   "at": [],
+   "sel": null,
+   "figure": "How the force scales",
+   "step": 1,
+   "text": "Double the distance, and the force drops to a quarter of F naught, not a half. Distance is squared in the denominator, so twice as far means two squared, four times weaker.",
+   "src": null,
+   "start": null,
+   "end": null,
+   "dur": null
+  },
+  {
+   "section": 1,
+   "voice": "Achird",
+   "at": [],
+   "sel": null,
+   "figure": "How the force scales",
+   "step": 2,
+   "text": "Back to r naught, and the force returns to F naught.",
+   "src": null,
+   "start": null,
+   "end": null,
+   "dur": null
+  },
+  {
+   "section": 1,
+   "voice": "Achird",
+   "at": [],
+   "sel": null,
+   "figure": "How the force scales",
+   "step": 3,
+   "text": "Now triple the left charge. The force on both charges triples, to three F naught. Notice the arrows stay equal: Newton's third law holds, even though one charge is bigger.",
+   "src": null,
+   "start": null,
+   "end": null,
+   "dur": null
+  },
+  {
+   "section": 1,
+   "voice": "Achird",
+   "at": [],
+   "sel": null,
+   "figure": "How the force scales",
+   "step": 4,
+   "text": "Halve the distance as well. That's three, times two squared: twelve F naught. The factors just multiply.",
+   "src": null,
+   "start": null,
+   "end": null,
+   "dur": null
+  },
+  {
+   "section": 1,
+   "voice": "Achird",
+   "at": [],
+   "sel": null,
+   "figure": "How the force scales",
+   "step": 5,
+   "text": "Finally, make the right charge negative. Same size force, but now it's attractive, so each arrow points toward the other charge.",
+   "src": null,
+   "start": null,
+   "end": null,
+   "dur": null
+  },
+  {
+   "section": 1,
+   "voice": "Achird",
+   "at": [
+    "The habit to build"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "Here's the habit to build. Most Coulomb questions are really ratio questions. Ask what got multiplied. Each charge factor multiplies F. And a distance factor n divides F by n squared. And the force on each of the two charges is always the same size.",
+   "src": null,
+   "start": null,
+   "end": null,
+   "dur": null
+  },
+  {
+   "section": 2,
+   "voice": "Charon",
+   "at": [
+    "With more than two charges"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "With more than two charges, each pair interacts as if the others weren't there. The net force on a charge is the vector sum of all those pairwise forces. This is called superposition, and it's the reason almost every problem in the first third of this course comes down to adding arrows.",
+   "src": null,
+   "start": null,
+   "end": null,
+   "dur": null
+  },
+  {
+   "section": 2,
+   "voice": "Charon",
+   "at": [],
+   "sel": null,
+   "figure": "Sandbox: superposition",
+   "step": null,
+   "text": "Try it here. Drag the three charges around. The solid arrows are the net force on each charge, and the dashed arrows are the pieces from each of the other charges. Here's a challenge: can you place them so that one charge feels no net force at all?",
+   "src": null,
+   "start": null,
+   "end": null,
+   "dur": null
+  },
+  {
+   "section": 2,
+   "voice": "Charon",
+   "at": [
+    "Classic mistake"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "A classic mistake: adding force magnitudes instead of vectors. Two equal pulls in opposite directions add up to zero, not to twice the pull. So draw the arrows first, then add the components.",
+   "src": null,
+   "start": null,
+   "end": null,
+   "dur": null
+  },
+  {
+   "section": 2,
+   "voice": "Charon",
+   "at": [],
+   "sel": ".quiz",
+   "figure": null,
+   "step": null,
+   "text": "That's the chapter. Try the checkpoint below to lock it in.",
+   "src": null,
+   "start": null,
+   "end": null,
+   "dur": null
+  }
+ ]
+}

@@ -631,3 +631,36 @@ svg.phys.pickable [data-id]:hover { --w: 3; }
 .lg-arrow { display: inline-block; width: 44px; height: 3px; border-radius: 2px; background: var(--c); position: relative; margin: 8px 6px 0 0; }
 .lg-arrow::after { content: ''; position: absolute; right: -2px; top: -4px; border-left: 8px solid var(--c); border-top: 5.5px solid transparent; border-bottom: 5.5px solid transparent; }
 .lg-charge { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 50%; background: var(--bg); border: 2px solid var(--c); color: var(--c); font: 600 13px var(--sans); }
+
+/* ---------- narration (src/ui/narrator.js) ---------- */
+.listen-btn { margin-top: 22px; }
+.listen-btn svg { fill: none; }
+.listen-min { color: var(--faint); font-size: 12.5px; }
+.tts-now { transition: background 0.25s, box-shadow 0.25s; }
+p.tts-now, h2.tts-now, h3.tts-now { background: var(--blue-bg); box-shadow: 0 0 0 8px var(--blue-bg); border-radius: 2px; }
+.fig.tts-now, .callout.tts-now, .eqcard.tts-now, .table-wrap.tts-now, .defs-card.tts-now, .quiz.tts-now { box-shadow: 0 0 0 3px var(--bg), 0 0 0 5px var(--blue); }
+.tts-bar {
+  position: fixed;
+  z-index: 40;
+  bottom: 18px;
+  left: calc(50% + var(--side) / 2);
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  background: var(--surface);
+  border: 1px solid var(--line-strong);
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+  animation: tts-in 0.3s var(--ease);
+}
+.tts-bar .tts-play { width: 40px; height: 34px; justify-content: center; padding: 0; }
+.tts-bar .tts-play svg { width: 14px; height: 14px; }
+.tts-label { font: 12.5px var(--mono); color: var(--muted); min-width: 52px; text-align: center; }
+.tts-rate { min-width: 48px; height: 32px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--ink); font: 500 12.5px var(--sans); font-variant-numeric: tabular-nums; cursor: pointer; }
+.tts-rate:hover { background: var(--sunk); }
+@keyframes tts-in { from { opacity: 0; transform: translate(-50%, 12px); } }
+@media (max-width: 900px) { .tts-bar { left: 50%; bottom: max(12px, env(safe-area-inset-bottom)); } }
+@media (prefers-reduced-motion: reduce) { .tts-bar { animation: none; } }
+.tts-bar .tts-play svg .fill { fill: currentColor; stroke: none; }

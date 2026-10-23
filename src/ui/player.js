@@ -19,6 +19,7 @@ export class Player {
     this.fit = fit;
 
     this.root = h('div', { class: 'player', tabindex: '0' });
+    this.root.player = this; // the narrator steps figures in time with the narration
     const stage = h('div', { class: 'stage' });
     this.badge = h('div', { class: 'badge' });
     stage.append(this.badge);
