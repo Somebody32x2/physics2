@@ -11,10 +11,10 @@
    "figure": null,
    "step": null,
    "text": "Physics One was about forces in general. Physics Two is about one force, the electromagnetic one, and everything it builds: fields, circuits, magnets, light. And it all starts with charge.",
-   "src": null,
-   "start": null,
-   "end": null,
-   "dur": null
+   "src": "audio/b39f9f9c66755867.mp3",
+   "start": 0,
+   "end": 16.18,
+   "dur": 16.2
   },
   {
    "section": 0,
@@ -26,10 +26,10 @@
    "figure": null,
    "step": null,
    "text": "Charge comes in two kinds, called positive and negative. Like charges repel; unlike charges attract. Charge is conserved: you can move it around, but you can never create net charge. And it's quantized: every charge is a whole-number multiple of the elementary charge, e, which is one point six times ten to the minus nineteen coulombs. A proton carries plus e, and an electron, minus e. Ordinary objects are neutral, so \"charging\" something just means moving a few electrons on or off it.",
-   "src": null,
-   "start": null,
-   "end": null,
-   "dur": null
+   "src": "audio/b39f9f9c66755867.mp3",
+   "start": 16.18,
+   "end": 55.34,
+   "dur": 39.2
   },
   {
    "section": 0,
@@ -42,10 +42,10 @@
    "figure": null,
    "step": null,
    "text": "The force between two point charges is Coulomb's law, and it looks just like Newton's gravity, with charge in place of mass. F equals k, times the size of q one, times the size of q two, all over r squared. So the force grows with each charge, and falls off with the square of the distance between them. It acts along the line joining the charges: repulsive for like signs, attractive for unlike. The constant k is about nine times ten to the nine, and it's really just there to make the units work.",
-   "src": null,
-   "start": null,
-   "end": null,
-   "dur": null
+   "src": "audio/b39f9f9c66755867.mp3",
+   "start": 55.34,
+   "end": 92.26,
+   "dur": 36.9
   },
   {
    "section": 1,
@@ -55,10 +55,10 @@
    "figure": "How the force scales",
    "step": 0,
    "text": "Let's see how that force scales. Here are two equal positive charges, a distance r naught apart. Call the force on each one F naught. Like charges repel, so each arrow points away from the other charge.",
-   "src": null,
-   "start": null,
-   "end": null,
-   "dur": null
+   "src": "audio/18a94b4c4658e0ba.mp3",
+   "start": 0,
+   "end": 15.14,
+   "dur": 15.1
   },
   {
    "section": 1,
@@ -68,10 +68,10 @@
    "figure": "How the force scales",
    "step": 1,
    "text": "Double the distance, and the force drops to a quarter of F naught, not a half. Distance is squared in the denominator, so twice as far means two squared, four times weaker.",
-   "src": null,
-   "start": null,
-   "end": null,
-   "dur": null
+   "src": "audio/18a94b4c4658e0ba.mp3",
+   "start": 15.14,
+   "end": 28.93,
+   "dur": 13.8
   },
   {
    "section": 1,
@@ -81,10 +81,10 @@
    "figure": "How the force scales",
    "step": 2,
    "text": "Back to r naught, and the force returns to F naught.",
-   "src": null,
-   "start": null,
-   "end": null,
-   "dur": null
+   "src": "audio/18a94b4c4658e0ba.mp3",
+   "start": 28.93,
+   "end": 33.59,
+   "dur": 4.7
   },
   {
    "section": 1,
@@ -94,10 +94,10 @@
    "figure": "How the force scales",
    "step": 3,
    "text": "Now triple the left charge. The force on both charges triples, to three F naught. Notice the arrows stay equal: Newton's third law holds, even though one charge is bigger.",
-   "src": null,
-   "start": null,
-   "end": null,
-   "dur": null
+   "src": "audio/18a94b4c4658e0ba.mp3",
+   "start": 33.59,
+   "end": 46.54,
+   "dur": 12.9
   },
   {
    "section": 1,
@@ -107,10 +107,10 @@
    "figure": "How the force scales",
    "step": 4,
    "text": "Halve the distance as well. That's three, times two squared: twelve F naught. The factors just multiply.",
-   "src": null,
-   "start": null,
-   "end": null,
-   "dur": null
+   "src": "audio/18a94b4c4658e0ba.mp3",
+   "start": 46.54,
+   "end": 56.12,
+   "dur": 9.6
   },
   {
    "section": 1,
@@ -120,10 +120,10 @@
    "figure": "How the force scales",
    "step": 5,
    "text": "Finally, make the right charge negative. Same size force, but now it's attractive, so each arrow points toward the other charge.",
-   "src": null,
-   "start": null,
-   "end": null,
-   "dur": null
+   "src": "audio/18a94b4c4658e0ba.mp3",
+   "start": 56.12,
+   "end": 66.51,
+   "dur": 10.4
   },
   {
    "section": 1,
@@ -135,10 +135,10 @@
    "figure": null,
    "step": null,
    "text": "Here's the habit to build. Most Coulomb questions are really ratio questions. Ask what got multiplied. Each charge factor multiplies F. And a distance factor n divides F by n squared. And the force on each of the two charges is always the same size.",
-   "src": null,
-   "start": null,
-   "end": null,
-   "dur": null
+   "src": "audio/18a94b4c4658e0ba.mp3",
+   "start": 66.51,
+   "end": 86.3,
+   "dur": 19.8
   },
   {
    "section": 2,
@@ -150,10 +150,10 @@
    "figure": null,
    "step": null,
    "text": "With more than two charges, each pair interacts as if the others weren't there. The net force on a charge is the vector sum of all those pairwise forces. This is called superposition, and it's the reason almost every problem in the first third of this course comes down to adding arrows.",
-   "src": null,
-   "start": null,
-   "end": null,
-   "dur": null
+   "src": "audio/2957b9ff1778a2da.mp3",
+   "start": 0,
+   "end": 18.24,
+   "dur": 18.2
   },
   {
    "section": 2,
@@ -163,10 +163,10 @@
    "figure": "Sandbox: superposition",
    "step": null,
    "text": "Try it here. Drag the three charges around. The solid arrows are the net force on each charge, and the dashed arrows are the pieces from each of the other charges. Here's a challenge: can you place them so that one charge feels no net force at all?",
-   "src": null,
-   "start": null,
-   "end": null,
-   "dur": null
+   "src": "audio/2957b9ff1778a2da.mp3",
+   "start": 18.24,
+   "end": 34.69,
+   "dur": 16.5
   },
   {
    "section": 2,
@@ -178,10 +178,10 @@
    "figure": null,
    "step": null,
    "text": "A classic mistake: adding force magnitudes instead of vectors. Two equal pulls in opposite directions add up to zero, not to twice the pull. So draw the arrows first, then add the components.",
-   "src": null,
-   "start": null,
-   "end": null,
-   "dur": null
+   "src": "audio/2957b9ff1778a2da.mp3",
+   "start": 34.69,
+   "end": 50.66,
+   "dur": 16
   },
   {
    "section": 2,
@@ -191,10 +191,10 @@
    "figure": null,
    "step": null,
    "text": "That's the chapter. Try the checkpoint below to lock it in.",
-   "src": null,
-   "start": null,
-   "end": null,
-   "dur": null
+   "src": "audio/2957b9ff1778a2da.mp3",
+   "start": 50.66,
+   "end": 55.3,
+   "dur": 4.6
   }
  ]
 }

@@ -106,10 +106,10 @@
    "figure": "The semester on one page",
    "step": 4,
    "text": "A changing magnetic field makes an electric field. And that field can drive current around a loop with no battery at all. That's how generators, transformers, and inductors work.",
-   "src": null,
-   "start": null,
-   "end": null,
-   "dur": null
+   "src": "audio/a2f2f7f319b4c5d9.mp3",
+   "start": 0,
+   "end": 11.87,
+   "dur": 11.9
   },
   {
    "section": 1,
@@ -119,10 +119,10 @@
    "figure": "The semester on one page",
    "step": 5,
    "text": "The last link: a changing electric field also makes a magnetic field. So now E and B can keep regenerating each other, far from any charge, and the pattern travels at c, about three times ten to the eight meters per second. That traveling pattern is light.",
-   "src": null,
-   "start": null,
-   "end": null,
-   "dur": null
+   "src": "audio/a2f2f7f319b4c5d9.mp3",
+   "start": 11.87,
+   "end": 31.24,
+   "dur": 19.4
   },
   {
    "section": 1,
@@ -132,10 +132,10 @@
    "figure": "The semester on one page",
    "step": 6,
    "text": "Light also arrives in lumps: photons, each with energy E equals h f. The same lumpiness explains why atoms give off sharp colors, and why electrons can behave like waves.",
-   "src": null,
-   "start": null,
-   "end": null,
-   "dur": null
+   "src": "audio/a2f2f7f319b4c5d9.mp3",
+   "start": 31.24,
+   "end": 44.84,
+   "dur": 13.6
   },
   {
    "section": 1,
@@ -145,10 +145,10 @@
    "figure": "The semester on one page",
    "step": 7,
    "text": "Finally, zoom into the atom, to the nucleus. Two protons one femtometer apart repel with about two hundred thirty newtons. Yet nuclei hold together, so there must be an even stronger force. And in nuclear reactions, mass turns into energy, through E equals m c squared.",
-   "src": null,
-   "start": null,
-   "end": null,
-   "dur": null
+   "src": "audio/a2f2f7f319b4c5d9.mp3",
+   "start": 44.84,
+   "end": 68.3,
+   "dur": 23.5
   },
   {
    "section": 2,
@@ -160,10 +160,10 @@
    "figure": null,
    "step": null,
    "text": "If you remember one idea from this course, make it this. Forces act through fields. A source makes a field everywhere around it, and anything that responds to that field feels a force right where it sits. Charges make E. Moving charges make B. Changing B makes E, and changing E makes B. Most problems come down to one of two questions: find the field from these sources, or find the force or motion this field causes.",
-   "src": null,
+   "src": "audio/04f3ed2edce276b6.mp3",
    "start": null,
    "end": null,
-   "dur": null
+   "dur": 34.7
   },
   {
    "section": 3,
@@ -176,10 +176,10 @@
    "figure": null,
    "step": null,
    "text": "So why bother with a middleman? Why not just have charges push each other directly? Coulomb's law looks like instant action at a distance: move one charge, and the other feels it at once. But that's not how it works. If you shake a charge, the far-away field only finds out after a delay, because the news travels outward at the speed of light.",
-   "src": null,
-   "start": null,
-   "end": null,
-   "dur": null
+   "src": "audio/2c9716d6a002f5b8.mp3",
+   "start": 0,
+   "end": 23.44,
+   "dur": 23.4
   },
   {
    "section": 3,
@@ -191,10 +191,10 @@
    "figure": null,
    "step": null,
    "text": "Between the old field and the new one there's a kink, and that kink carries energy away. A charge that keeps wiggling sends out a whole train of kinks: a wave. That's the seed of electromagnetic waves, later in the course. And it's why the field is a real physical thing, not just bookkeeping.",
-   "src": null,
-   "start": null,
-   "end": null,
-   "dur": null
+   "src": "audio/2c9716d6a002f5b8.mp3",
+   "start": 23.44,
+   "end": 43.89,
+   "dur": 20.5
   },
   {
    "section": 3,
@@ -204,10 +204,10 @@
    "figure": "The field is the messenger",
    "step": null,
    "text": "Try it in this figure. Press \"One shove\" and watch the dashed circle spread out. Outside it, the field lines still point to where the charge used to be. Inside, they point to where it is now. Then switch to \"Keep wiggling\", and you'll see a wave peel off the charge. Notice the kinks are strongest sideways to the motion, and missing along it.",
-   "src": null,
-   "start": null,
-   "end": null,
-   "dur": null
+   "src": "audio/2c9716d6a002f5b8.mp3",
+   "start": 43.89,
+   "end": 68.26,
+   "dur": 24.4
   },
   {
    "section": 4,
@@ -221,10 +221,10 @@
    "figure": null,
    "step": null,
    "text": "Gravity was the star of Physics One, so it's worth seeing just how weak it is. Take two protons. They repel electrically, and they attract gravitationally. Both forces fall off as one over r squared, so their ratio doesn't depend on distance at all. And that ratio? The electric force wins by a factor of about ten to the thirty-six.",
-   "src": null,
-   "start": null,
-   "end": null,
-   "dur": null
+   "src": "audio/0a230d6e47ee564f.mp3",
+   "start": 0,
+   "end": 26.23,
+   "dur": 26.2
   },
   {
    "section": 4,
@@ -236,10 +236,10 @@
    "figure": null,
    "step": null,
    "text": "To picture that: if you drew the gravity arrow one atom wide, the electric arrow would be about ten to the twenty-six meters long. That's roughly the size of the observable universe. Gravity only wins for planets because matter is almost perfectly neutral. Positive and negative charges cancel, while mass only adds up. And every contact force from Physics One, the normal force, friction, tension, the push of your hand, is really electric force between the outer electrons of atoms.",
-   "src": null,
-   "start": null,
-   "end": null,
-   "dur": null
+   "src": "audio/0a230d6e47ee564f.mp3",
+   "start": 26.23,
+   "end": 62.74,
+   "dur": 36.5
   },
   {
    "section": 5,
@@ -252,10 +252,10 @@
    "figure": null,
    "step": null,
    "text": "A lot carries over from Physics One. Free-body diagrams and F equals m a work unchanged; electric and magnetic forces are just new entries. Work and potential energy become voltage and circuit power. A charge moving across a magnetic field goes in a circle, so circular motion is back. An L C circuit is a mass on a spring, with charge sloshing instead of position. And waves return as light, and as matter waves.",
-   "src": null,
-   "start": null,
-   "end": null,
-   "dur": null
+   "src": "audio/346ad3802c0dfd6b.mp3",
+   "start": 0,
+   "end": 28.99,
+   "dur": 29
   },
   {
    "section": 5,
@@ -267,10 +267,10 @@
    "figure": null,
    "step": null,
    "text": "There are a few new tools, too. Vectors in three dimensions, including arrows into and out of the page. The cross product, which gives the magnetic force, along with the right-hand rule for its direction. Flux: how much field passes through a surface. Integrals, which here just mean adding up the contribution of every little piece. And exponentials, for discharging capacitors and decaying nuclei: equal time steps, equal fractions.",
-   "src": null,
-   "start": null,
-   "end": null,
-   "dur": null
+   "src": "audio/346ad3802c0dfd6b.mp3",
+   "start": 28.99,
+   "end": 56.98,
+   "dur": 28
   },
   {
    "section": 6,
@@ -284,10 +284,10 @@
    "figure": null,
    "step": null,
    "text": "This course covers a huge range of sizes: from circuits you can hold, down to nuclei a hundred thousand times smaller than an atom. Light ties those scales together. Its wavelength sets which details a wave can resolve, and its photon energy sets which atomic jumps it can drive. On this scale, each tick is a thousand times the one before, and visible light is just a thin sliver.",
-   "src": null,
+   "src": "audio/c0bb181d332dfa14.mp3",
    "start": null,
    "end": null,
-   "dur": null
+   "dur": 27.6
   },
   {
    "section": 7,
@@ -300,10 +300,10 @@
    "figure": null,
    "step": null,
    "text": "Next is a table of the big equations. You don't need them yet. For now, the goal is just to recognize each one and know which part of the story it belongs to: Coulomb's law for the force between charges, Q equals C V for capacitors, V equals I R for resistors, E equals h f for photons, and so on. The equation sheet at the end has all of them, with units.",
-   "src": null,
-   "start": null,
-   "end": null,
-   "dur": null
+   "src": "audio/0529a86067657691.mp3",
+   "start": 0,
+   "end": 25.51,
+   "dur": 25.5
   },
   {
    "section": 7,
@@ -316,10 +316,10 @@
    "figure": null,
    "step": null,
    "text": "A quick word on how to use this site. Each chapter opens with a few paragraphs, then stepped figures. Use the arrow buttons under a figure to move one step at a time, and read the caption for what changed and why. Sandboxes have sliders, toggles, or charges you can drag: play with them until the behavior feels predictable. And every chapter ends with a short checkpoint. Your answers are saved in this browser.",
-   "src": null,
-   "start": null,
-   "end": null,
-   "dur": null
+   "src": "audio/0529a86067657691.mp3",
+   "start": 25.51,
+   "end": 50.35,
+   "dur": 24.8
   },
   {
    "section": 7,
@@ -331,10 +331,10 @@
    "figure": null,
    "step": null,
    "text": "One trap to avoid at the start of the semester: treating Physics Two as a list of formulas. The chapters are links in one chain. Most exam questions really test whether you know which link applies. Is this the field from a charge at rest? From a current? From a changing flux? Find the link on the map first. Then pick the equation.",
-   "src": null,
-   "start": null,
-   "end": null,
-   "dur": null
+   "src": "audio/0529a86067657691.mp3",
+   "start": 50.35,
+   "end": 74.89,
+   "dur": 24.5
   },
   {
    "section": 7,
@@ -344,10 +344,10 @@
    "figure": null,
    "step": null,
    "text": "That's the big picture. Try the checkpoint below, then head on to chapter two: charge, and Coulomb's law.",
-   "src": null,
-   "start": null,
-   "end": null,
-   "dur": null
+   "src": "audio/0529a86067657691.mp3",
+   "start": 74.89,
+   "end": 82.22,
+   "dur": 7.3
   }
  ]
 }
