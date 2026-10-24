@@ -40,7 +40,7 @@ src/core/phys-view.js       PhysView: draws a frame { draw(d, p, t), p, box, liv
 src/core/draw.js            Draw: arrows, charges, field lines, circuit symbols, lenses, mini plots
 src/ui/                     Player (stepper), checkpoint quizzes, figure/callout, sliders, equation cards
 tests/*.test.js             node:test checks of the models (textbook values, limits, conservation laws)
-tts/                        narration scripts and the clip generator (not deployed); audio/ holds the clips
+tts/                        narration scripts, writing guide (WRITING.md) and clip generator (not deployed); audio/ holds the clips
 ```
 
 ## Extending
@@ -66,7 +66,8 @@ The site only plays committed files (`audio/<hash>.mp3` and `audio/<chapter>.jso
 Clips are named by a hash of the whole request, so nothing is ever generated twice: re-runs skip existing
 clips, and editing one section re-records only that section. One API call per section, because the free tier
 allows 10 requests a day; `--max N` caps a run. See the comment at the top of `tts/gen.mjs`. Blocks without a
-recording yet are read by the browser's own voice. `tests/narration.test.js` checks every `at` still exists.
+recording yet are read by the browser's own voice; a chapter is published (`audio/<id>.json`) only once all its clips
+exist. `tests/narration.test.js` checks every `at` still exists. How to write a script: `tts/WRITING.md`.
 
 ## Deploy
 

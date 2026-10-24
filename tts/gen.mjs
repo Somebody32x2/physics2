@@ -5,6 +5,7 @@
  *   node tts/gen.mjs --dry           list what would be generated, call nothing
  *   node tts/gen.mjs --max 10        stop after 10 API calls (stay inside the free daily quota)
  *   node tts/gen.mjs overview charge only these chapters
+ *   node tts/gen.mjs --partial       also publish chapters that still have missing clips (browser voice fills in)
  *
  * One API call per section: its blocks go in one request (each with its own style), and each block's start
  * in the clip is estimated from its share of the text, then snapped to the nearest pause in the audio.
@@ -40,6 +41,7 @@ const ENDPOINT = 'https://generativelanguage.googleapis.com/v1beta/interactions'
 
 const args = process.argv.slice(2);
 const dry = args.includes('--dry');
+const partial = args.includes('--partial'); // also write manifests for chapters with missing clips
 const maxCalls = args.includes('--max') ? Number(args[args.indexOf('--max') + 1]) : Infinity;
 const only = args.filter((a, i) => !a.startsWith('--') && args[i - 1] !== '--max');
 
@@ -228,8 +230,10 @@ async function main() {
           dur: t ? Math.round((t[1] - t[0]) * 10) / 10 : null,
         };
       });
-      if (!dry) writeFileSync(join(AUDIO, `${ch.id}.json`), `${JSON.stringify({ chapter: ch.id, blocks }, null, 1)}\n`);
       const missing = blocks.filter((b) => !b.src).length;
+      // Publish a chapter only once every clip exists, so the live Listen button never falls back mid-chapter.
+      // While an edited chapter is being re-recorded, its previous manifest (and clips) stay as they were.
+      if (!dry && (!missing || partial)) writeFileSync(join(AUDIO, `${ch.id}.json`), `${JSON.stringify({ chapter: ch.id, blocks }, null, 1)}\n`);
       console.log(`${ch.id}: ${blocks.length} blocks, ${missing ? `${missing} missing` : 'all recorded'}, ${(blocks.reduce((s, b) => s + (b.dur ?? 0), 0) / 60).toFixed(1)} min`);
     }
     console.log(`${calls} API call(s) this run`);
