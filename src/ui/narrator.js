@@ -13,7 +13,7 @@ import { h, icon } from './dom.js';
  */
 const RATES = [1, 1.25, 1.5, 0.85];
 const RATE_KEY = 'physics2.tts.rate';
-const BLOCKS = 'p, h2, h3, aside.callout, figure.fig, .eqcard, .table-wrap, .defs-card, .quiz';
+const BLOCKS = 'p, ul, ol, h2, h3, aside.callout, figure.fig, .eqcard, .table-wrap, .defs-card, .quiz';
 // A few samples of silence: playing it inside the click unlocks the audio element on iOS for the clips that follow.
 const SILENCE = 'data:audio/wav;base64,UklGRigAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQQAAACAgICA';
 const ico = {

@@ -637,7 +637,7 @@ svg.phys.pickable [data-id]:hover { --w: 3; }
 .listen-btn svg { fill: none; }
 .listen-min { color: var(--faint); font-size: 12.5px; }
 .tts-now { transition: background 0.25s, box-shadow 0.25s; }
-p.tts-now, h2.tts-now, h3.tts-now { background: var(--blue-bg); box-shadow: 0 0 0 8px var(--blue-bg); border-radius: 2px; }
+p.tts-now, ul.tts-now, ol.tts-now, h2.tts-now, h3.tts-now { background: var(--blue-bg); box-shadow: 0 0 0 8px var(--blue-bg); border-radius: 2px; }
 .fig.tts-now, .callout.tts-now, .eqcard.tts-now, .table-wrap.tts-now, .defs-card.tts-now, .quiz.tts-now { box-shadow: 0 0 0 3px var(--bg), 0 0 0 5px var(--blue); }
 .tts-bar {
   position: fixed;
