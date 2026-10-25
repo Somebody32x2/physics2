@@ -9,7 +9,7 @@ const lessonText = (id) =>
   readFileSync(new URL(`../src/lessons/${id}.js`, import.meta.url), 'utf8')
     .replace(/\\u([0-9a-fA-F]{4})/g, (_, h) => String.fromCharCode(parseInt(h, 16)))
     .replace(/\\'/g, "'")
-    .replace(/<[^>]+>/g, '');
+    .replace(/<\/?[a-z][a-z0-9]*(\s[^<>]*)?>/g, ''); // HTML tags only, not JS comparisons
 
 const scripts = readdirSync(new URL('../tts/script/', import.meta.url)).filter((f) => f.endsWith('.js'));
 
