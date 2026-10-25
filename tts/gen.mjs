@@ -143,23 +143,25 @@ function pauses(mp3) {
   return out;
 }
 
-/** [start, end] of each block in a clip, from text shares snapped to the longest nearby pause. */
+/**
+ * [start, end] of each block in a clip. Each boundary is estimated from the previous one at the clip's average
+ * speaking rate (so errors do not accumulate), then snapped to the longest nearby pause: the <short pause> put
+ * between blocks is usually the longest silence around.
+ */
 function cues(mp3, weights) {
   const dur = duration(mp3);
   const r = (x) => Math.round(x * 100) / 100;
   if (weights.length === 1) return [[0, r(dur)]];
-  const total = weights.reduce((a, b) => a + b, 0);
+  const rate = weights.reduce((a, b) => a + b, 0) / dur; // characters per second
   const found = pauses(mp3);
   const starts = [0];
-  let acc = 0;
   for (let k = 1; k < weights.length; k++) {
-    acc += weights[k - 1];
-    const est = (dur * acc) / total;
-    const win = Math.max(3, dur * 0.12);
-    const best = found
-      .filter((p) => Math.abs(p.t - est) <= win && p.t > starts.at(-1) + 1)
-      .sort((a, b) => b.len - 0.15 * Math.abs(b.t - est) - (a.len - 0.15 * Math.abs(a.t - est)))[0];
-    starts.push(best ? best.t : Math.max(est, starts.at(-1) + 1));
+    const len = weights[k - 1] / rate; // expected length of the previous block
+    const est = starts.at(-1) + len;
+    const win = Math.max(2.5, 0.35 * len);
+    const score = (p) => p.len - (0.6 * Math.abs(p.t - est)) / win;
+    const best = found.filter((p) => Math.abs(p.t - est) <= win && p.t > starts.at(-1) + 0.5 * len).sort((a, b) => score(b) - score(a))[0];
+    starts.push(best ? best.t : est);
   }
   return starts.map((t, k) => [r(t), r(starts[k + 1] ?? dur)]);
 }

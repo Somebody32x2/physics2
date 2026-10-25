@@ -1,0 +1,317 @@
+{
+ "chapter": "field",
+ "blocks": [
+  {
+   "section": 0,
+   "voice": "Achird",
+   "at": [
+    "splits that into two steps"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "Coulomb's law gives the force between two charges that both exist. The electric field splits that into two steps. First, a charge, or a whole arrangement of charges, sets up a field in the space around it. Second, any other charge placed in that space feels a force from the field, right at the spot where it sits. The field is an arrow at every point: the force a charge would feel there, per coulomb.",
+   "src": "audio/e150752e49b69c89.mp3",
+   "start": 0,
+   "end": 29.53,
+   "dur": 29.5
+  },
+  {
+   "section": 0,
+   "voice": "Achird",
+   "at": [
+    "This is the same move as going from"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "It's the same move you made with gravity. Instead of saying \"the Earth pulls this two kilogram ball with nineteen point six newtons\", you say \"near the Earth, g is nine point eight newtons per kilogram, pointing down\". The field is the part that belongs to the source; the force is that times whatever you put in it. One difference from gravity: charge has a sign. So a negative charge feels a force opposite to the field.",
+   "src": "audio/e150752e49b69c89.mp3",
+   "start": 29.53,
+   "end": 56.82,
+   "dur": 27.3
+  },
+  {
+   "section": 0,
+   "voice": "Achird",
+   "at": [
+    "Field and force"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "In symbols: the field E is the force F on a small test charge, divided by that charge, q naught. Turn it around, and a charge q in a field feels a force q times E. Along the field if q is positive, against it if q is negative. Field is measured in newtons per coulomb, which is the same as volts per meter.",
+   "src": "audio/e150752e49b69c89.mp3",
+   "start": 56.82,
+   "end": 84.76,
+   "dur": 27.9
+  },
+  {
+   "section": 0,
+   "voice": "Achird",
+   "at": [
+    "For a single point charge the field follows",
+    "Field of a point charge"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "For a single point charge, the field comes straight from Coulomb's law: just drop the second charge. E equals k times the size of q, over r squared. So the field grows with the source charge, and falls off as one over r squared. Twice as far, a quarter as strong. And the direction is away from a positive charge, and toward a negative one.",
+   "src": "audio/e150752e49b69c89.mp3",
+   "start": 84.76,
+   "end": 110.2,
+   "dur": 25.4
+  },
+  {
+   "section": 0,
+   "voice": "Achird",
+   "at": [
+    "With several charges, each makes its own field"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "With several charges, each one makes its own field, and the fields add as vectors. That's superposition again, exactly as it was for forces. The figure below uses it to build the most important two-charge field: the dipole, made of equal and opposite charges.",
+   "src": "audio/e150752e49b69c89.mp3",
+   "start": 110.2,
+   "end": 126.62,
+   "dur": 16.4
+  },
+  {
+   "section": 1,
+   "voice": "Charon",
+   "at": [],
+   "sel": null,
+   "figure": "Building a dipole field",
+   "step": 0,
+   "text": "Start with a lone positive charge. Its field lines point straight out, in every direction. Those twelve lines spread over bigger and bigger spheres, so their density, which is the field strength, falls off as one over r squared.",
+   "src": "audio/9bbb7fc0c0fc70d6.mp3",
+   "start": 0,
+   "end": 17.63,
+   "dur": 17.6
+  },
+  {
+   "section": 1,
+   "voice": "Charon",
+   "at": [],
+   "sel": null,
+   "figure": "Building a dipole field",
+   "step": 1,
+   "text": "At point P, the field is an arrow pointing away from the positive charge. Its length is k q over r squared. It tells you that a small positive test charge placed at P would be pushed this way.",
+   "src": "audio/9bbb7fc0c0fc70d6.mp3",
+   "start": 17.63,
+   "end": 34.77,
+   "dur": 17.1
+  },
+  {
+   "section": 1,
+   "voice": "Charon",
+   "at": [],
+   "sel": null,
+   "figure": "Building a dipole field",
+   "step": 2,
+   "text": "Now add an equal negative charge. The lines now start on the plus charge and end on the minus. Each line bends, because the field at every point is the sum of two arrows, one from each charge.",
+   "src": "audio/9bbb7fc0c0fc70d6.mp3",
+   "start": 34.77,
+   "end": 50.65,
+   "dur": 15.9
+  },
+  {
+   "section": 1,
+   "voice": "Charon",
+   "at": [],
+   "sel": null,
+   "figure": "Building a dipole field",
+   "step": 3,
+   "text": "Here's superposition at P. E one points away from the positive charge, and E two points toward the negative charge. Place them head to tail, and they add up to the net field, in black.",
+   "src": "audio/9bbb7fc0c0fc70d6.mp3",
+   "start": 50.65,
+   "end": 65.88,
+   "dur": 15.2
+  },
+  {
+   "section": 1,
+   "voice": "Charon",
+   "at": [],
+   "sel": null,
+   "figure": "Building a dipole field",
+   "step": 4,
+   "text": "Notice the net field is tangent to the field line through P. That's exactly what a field line is: a curve that follows the field arrow at every point.",
+   "src": "audio/9bbb7fc0c0fc70d6.mp3",
+   "start": 65.88,
+   "end": 76.94,
+   "dur": 11.1
+  },
+  {
+   "section": 1,
+   "voice": "Charon",
+   "at": [],
+   "sel": null,
+   "figure": "Building a dipole field",
+   "step": 5,
+   "text": "On the midline, the two pieces are mirror images. Their up and down parts cancel, so the net field points parallel to the axis, from plus toward minus.",
+   "src": "audio/9bbb7fc0c0fc70d6.mp3",
+   "start": 76.94,
+   "end": 88.4,
+   "dur": 11.5
+  },
+  {
+   "section": 1,
+   "voice": "Charon",
+   "at": [],
+   "sel": null,
+   "figure": "Building a dipole field",
+   "step": 6,
+   "text": "Now flip the right charge to positive. The lines push away from each other, and none of them end between the charges. At the midpoint, the two fields are equal and opposite, so the field is zero there. Field lines never cross; where they would, the field is zero.",
+   "src": "audio/9bbb7fc0c0fc70d6.mp3",
+   "start": 88.4,
+   "end": 108.93,
+   "dur": 20.5
+  },
+  {
+   "section": 1,
+   "voice": "Charon",
+   "at": [
+    "Rules for field lines"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "So, the rules for field lines. They start on positive charges and end on negative ones, or run off to infinity. The number of lines leaving a charge is proportional to its charge. Where the lines are dense, the field is strong. The field at any point is tangent to the line through it. And lines never cross, because the field has only one direction at each point.",
+   "src": "audio/9bbb7fc0c0fc70d6.mp3",
+   "start": 108.93,
+   "end": 132.77,
+   "dur": 23.8
+  },
+  {
+   "section": 2,
+   "voice": "Achird",
+   "at": [
+    "Try it yourself. Drag the charges"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "Now try it yourself. Drag the charges around, and watch the lines rearrange. Drag the small test charge, q naught, to read the field at any point. And click a charge to change its size or its sign, or to switch it off.",
+   "src": "audio/e0142ad1f12c7c9b.mp3",
+   "start": 0,
+   "end": 14.09,
+   "dur": 14.1
+  },
+  {
+   "section": 2,
+   "voice": "Achird",
+   "at": [],
+   "sel": null,
+   "figure": "Sandbox: field of a few charges",
+   "step": null,
+   "text": "Two things worth trying. In a dipole, compare the field at the midpoint with the field just outside one of the charges, along the axis. Then make two equal positive charges, and see if you can park the test charge right where the field is zero.",
+   "src": "audio/e0142ad1f12c7c9b.mp3",
+   "start": 14.09,
+   "end": 30.55,
+   "dur": 16.5
+  },
+  {
+   "section": 2,
+   "voice": "Achird",
+   "at": [
+    "Classic mistake"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "A classic mistake: the field arrow tells you the force on a positive charge. An electron at the same point gets pushed the opposite way. And the field at a point doesn't depend on whether anything is sitting there. The field belongs to the source charges; the force, q E, belongs to the pair.",
+   "src": "audio/e0142ad1f12c7c9b.mp3",
+   "start": 30.55,
+   "end": 49.49,
+   "dur": 18.9
+  },
+  {
+   "section": 3,
+   "voice": "Charon",
+   "at": [
+    "Continuous charge and uniform fields",
+    "Real objects carry charge spread"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "Real objects carry charge spread over lines, surfaces, and volumes. The recipe is still superposition. Chop the object into little pieces, treat each one as a point charge, and add up the field of every piece. That sum is an integral, but in this course you mostly need its famous results as scaling facts.",
+   "src": "audio/99561395b633f2fe.mp3",
+   "start": 0,
+   "end": 23.53,
+   "dur": 23.5
+  },
+  {
+   "section": 3,
+   "voice": "Charon",
+   "at": [
+    "A long "
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "Three of them. Next to a long line of charge, the field points straight out from the line and falls off as one over r, more slowly than for a point charge. Next to a large flat sheet, the field is the same at every distance: sigma over two epsilon naught, where sigma is the charge per area. And between two oppositely charged parallel plates, the sheets' fields add up inside and cancel outside. So between the plates the field is uniform: sigma over epsilon naught, pointing from plus to minus.",
+   "src": "audio/99561395b633f2fe.mp3",
+   "start": 23.53,
+   "end": 60.42,
+   "dur": 36.9
+  },
+  {
+   "section": 3,
+   "voice": "Charon",
+   "at": [
+    "is the shortcut that gets these results"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "Gauss's law, in the next chapter, gets these results without the integral. The uniform field between plates is the workhorse of this course. A charge inside it feels a constant force, so it moves exactly like a ball thrown in Physics One: constant velocity across the field, constant acceleration along it. A parabola. That's how an old television tube steered its electron beam.",
+   "src": "audio/99561395b633f2fe.mp3",
+   "start": 60.42,
+   "end": 88.7,
+   "dur": 28.3
+  },
+  {
+   "section": 3,
+   "voice": "Charon",
+   "at": [],
+   "sel": null,
+   "figure": "An electron through deflection plates",
+   "step": null,
+   "text": "Here, an electron flies between plates five centimeters long and two centimeters apart. At three hundred volts the field is fifteen thousand volts per meter, and the electron crosses in about two nanoseconds. Try halving the entry speed: the deflection grows four times, because it spends twice as long in the field, and sideways distance goes as time squared.",
+   "src": "audio/99561395b633f2fe.mp3",
+   "start": 88.7,
+   "end": 111.83,
+   "dur": 23.1
+  },
+  {
+   "section": 3,
+   "voice": "Charon",
+   "at": [
+    "Two things to notice in the readouts"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "Two things to notice in the readouts. The acceleration is around ten to the fifteen meters per second squared, so gravity is completely negligible for electrons and ions in any realistic field. And a proton at the same speed would feel the same size force, the other way. But with eighteen hundred thirty-six times the mass, it would bend eighteen hundred thirty-six times less.",
+   "src": "audio/99561395b633f2fe.mp3",
+   "start": 111.83,
+   "end": 139.79,
+   "dur": 28
+  },
+  {
+   "section": 3,
+   "voice": "Charon",
+   "at": [],
+   "sel": ".quiz",
+   "figure": null,
+   "step": null,
+   "text": "That's the electric field. Try the checkpoint below, then on to Gauss's law.",
+   "src": "audio/99561395b633f2fe.mp3",
+   "start": 139.79,
+   "end": 145.46,
+   "dur": 5.7
+  }
+ ]
+}

@@ -1,0 +1,317 @@
+{
+ "chapter": "gauss",
+ "blocks": [
+  {
+   "section": 0,
+   "voice": "Achird",
+   "at": [
+    "Field lines give a way to"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "Field lines give us a way to count field. Electric flux through a surface is how much field pokes through it. Picture the number of field lines crossing it. A big surface facing the field head-on catches lots of lines. Tilt it, and it catches fewer. Turn it edge-on, and it catches none.",
+   "src": "audio/1680c54bc5c8aa14.mp3",
+   "start": 0,
+   "end": 18.33,
+   "dur": 18.3
+  },
+  {
+   "section": 0,
+   "voice": "Achird",
+   "at": [
+    "how much rain falls into a bucket"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "Think of flux as how much rain falls into a bucket. It depends on how hard it's raining, that's E. On the size of the opening, that's A. And on how the opening is tilted relative to the rain.",
+   "src": "audio/1680c54bc5c8aa14.mp3",
+   "start": 18.33,
+   "end": 31.41,
+   "dur": 13.1
+  },
+  {
+   "section": 0,
+   "voice": "Achird",
+   "at": [
+    "Electric flux (uniform field, flat area)"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "So for a flat area in a uniform field: the flux, capital phi, equals E times A times the cosine of theta. Theta is the angle between the field and the surface's normal, the line sticking straight out of it, not the surface itself. Face-on, theta is zero and the flux is biggest. At ninety degrees the field just skims along the surface, and the flux is zero.",
+   "src": "audio/1680c54bc5c8aa14.mp3",
+   "start": 31.41,
+   "end": 55.25,
+   "dur": 23.8
+  },
+  {
+   "section": 0,
+   "voice": "Achird",
+   "at": [],
+   "sel": null,
+   "figure": "Flux through a tilted area",
+   "step": null,
+   "text": "Here's a twenty centimeter square, seen edge-on, in a uniform field of a thousand newtons per coulomb. Face-on, the flux is forty. Drag the tilt to sixty degrees, and the flux halves to twenty, because the cosine of sixty is one half. Only the lines that actually pierce the square count.",
+   "src": "audio/1680c54bc5c8aa14.mp3",
+   "start": 55.25,
+   "end": 74.81,
+   "dur": 19.6
+  },
+  {
+   "section": 1,
+   "voice": "Charon",
+   "at": [
+    "Now wrap a surface all the way around"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "Now wrap a surface all the way around something: a closed surface, like a balloon. By convention, flux leaving counts as positive, and flux entering counts as negative. And Gauss's law says the net flux out depends on just one thing.",
+   "src": "audio/d2537c89d12675dd.mp3",
+   "start": 0,
+   "end": 18.69,
+   "dur": 18.7
+  },
+  {
+   "section": 1,
+   "voice": "Charon",
+   "at": [
+    "net flux out through the closed surface"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "The net flux out of any closed surface equals the charge enclosed, divided by epsilon naught. The shape and size of the surface don't matter. Charges outside contribute zero net flux, because their lines go in and come back out. Epsilon naught is the permittivity of free space, about eight point eight five times ten to the minus twelve.",
+   "src": "audio/d2537c89d12675dd.mp3",
+   "start": 18.69,
+   "end": 43.99,
+   "dur": 25.3
+  },
+  {
+   "section": 1,
+   "voice": "Charon",
+   "at": [
+    "In line language: every line"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "In the language of lines: every line that starts inside has to cross out. Every line that ends inside has to cross in. And a line that just passes through crosses in once and out once. So lines out, minus lines in, counts the charge inside.",
+   "src": "audio/d2537c89d12675dd.mp3",
+   "start": 43.99,
+   "end": 63.04,
+   "dur": 19
+  },
+  {
+   "section": 1,
+   "voice": "Charon",
+   "at": [],
+   "sel": null,
+   "figure": "Sandbox: a Gaussian surface",
+   "step": null,
+   "text": "Test it here. Drag the blue surface, or the charges. Green dots are lines leaving, and red rings are lines entering. Try pulling a charge just outside the surface, and watch the net count stay put, even though the field on the surface changes.",
+   "src": "audio/d2537c89d12675dd.mp3",
+   "start": 63.04,
+   "end": 79.67,
+   "dur": 16.6
+  },
+  {
+   "section": 1,
+   "voice": "Charon",
+   "at": [
+    "Field lines are only created and destroyed by charge"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "That's what Gauss's law is really saying. Field lines are only created and destroyed by charge. So the flux out of a closed surface measures the charge inside, and nothing else. Outside charges change the field ON the surface, but not the net flux through it.",
+   "src": "audio/d2537c89d12675dd.mp3",
+   "start": 79.67,
+   "end": 96.29,
+   "dur": 16.6
+  },
+  {
+   "section": 2,
+   "voice": "Achird",
+   "at": [
+    "Using symmetry to find E",
+    "is always true, but it only"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "Gauss's law is always true. But it only hands you the field when the charge is so symmetric that you can pick a surface where E has the same size everywhere, and points straight through it. Then the flux is just E times the area, and you solve for E. There are exactly three such shapes, and they give the three scaling laws from the last chapter.",
+   "src": "audio/2108ea9956f7ba44.mp3",
+   "start": 0,
+   "end": 22.65,
+   "dur": 22.7
+  },
+  {
+   "section": 2,
+   "voice": "Achird",
+   "at": [],
+   "sel": null,
+   "figure": "Three symmetries, three laws",
+   "step": null,
+   "text": "Switch between them. Around a point or a ball, the surface is a sphere, whose area grows as r squared, so the field falls as one over r squared. Around a line, it's a cylinder, whose side grows as r, so the field falls as one over r. And for a flat sheet, it's a little pillbox, whose ends don't grow at all. So the field is constant.",
+   "src": "audio/2108ea9956f7ba44.mp3",
+   "start": 22.65,
+   "end": 48.75,
+   "dur": 26.1
+  },
+  {
+   "section": 2,
+   "voice": "Achird",
+   "at": [
+    "The sphere result has a bonus"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "The sphere result has a bonus. Outside any spherically symmetric charge, a charged ball, a planet, a shell, the field is exactly that of a point charge at the center. Newton needed calculus to prove this for gravity; Gauss makes it one line. And inside a uniform shell, the enclosed charge is zero, so the field is zero.",
+   "src": "audio/2108ea9956f7ba44.mp3",
+   "start": 48.75,
+   "end": 72.38,
+   "dur": 23.6
+  },
+  {
+   "section": 3,
+   "voice": "Charon",
+   "at": [
+    "Conductors",
+    "has electrons that are free to move"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "Now, conductors. A conductor, any metal, has electrons that are free to move. If there's any field inside, they move. So once everything settles, in electrostatic equilibrium, the field inside the metal must be zero. Let's watch a ball get there.",
+   "src": "audio/9032060bf6374e00.mp3",
+   "start": 0,
+   "end": 19.43,
+   "dur": 19.4
+  },
+  {
+   "section": 3,
+   "voice": "Charon",
+   "at": [],
+   "sel": null,
+   "figure": "A conductor cancels the field inside",
+   "step": 0,
+   "text": "A neutral metal ball is dropped into a uniform field. For the first instant, the field lines go straight through it. Its free electrons, the blue dots, feel a force opposite to the field: to the left.",
+   "src": "audio/9032060bf6374e00.mp3",
+   "start": 19.43,
+   "end": 33.66,
+   "dur": 14.2
+  },
+  {
+   "section": 3,
+   "voice": "Charon",
+   "at": [],
+   "sel": null,
+   "figure": "A conductor cancels the field inside",
+   "step": 1,
+   "text": "Electrons pile up on the left surface, and leave uncovered positive ions on the right. That separated charge makes its own field inside the metal, pointing left, which cancels part of the applied field. The inside field drops to sixty percent.",
+   "src": "audio/9032060bf6374e00.mp3",
+   "start": 33.66,
+   "end": 52.43,
+   "dur": 18.8
+  },
+  {
+   "section": 3,
+   "voice": "Charon",
+   "at": [],
+   "sel": null,
+   "figure": "A conductor cancels the field inside",
+   "step": 2,
+   "text": "More charge separates. The inside field drops to twenty percent, and the push on the remaining electrons gets weaker. The field lines now bend toward the ball, and land on its charges.",
+   "src": "audio/9032060bf6374e00.mp3",
+   "start": 52.43,
+   "end": 66.37,
+   "dur": 13.9
+  },
+  {
+   "section": 3,
+   "voice": "Charon",
+   "at": [],
+   "sel": null,
+   "figure": "A conductor cancels the field inside",
+   "step": 3,
+   "text": "Equilibrium: the field inside is zero. With no field, there's no force on the free electrons, so they stop moving. This takes far less than a microsecond. And the ball is still neutral overall; the charge has only moved to the surface.",
+   "src": "audio/9032060bf6374e00.mp3",
+   "start": 66.37,
+   "end": 83.1,
+   "dur": 16.7
+  },
+  {
+   "section": 3,
+   "voice": "Charon",
+   "at": [],
+   "sel": null,
+   "figure": "A conductor cancels the field inside",
+   "step": 4,
+   "text": "Just outside, the field is perpendicular to the surface. Any sideways part would push surface charge along the metal, so in equilibrium there isn't one. The lines end on the negative charges on the left, and start again from the positive charges on the right.",
+   "src": "audio/9032060bf6374e00.mp3",
+   "start": 83.1,
+   "end": 100.75,
+   "dur": 17.7
+  },
+  {
+   "section": 3,
+   "voice": "Charon",
+   "at": [],
+   "sel": null,
+   "figure": "A conductor cancels the field inside",
+   "step": 5,
+   "text": "Now hollow it out. The empty cavity has zero field too, whatever the field outside does. That's a Faraday cage: a car in a lightning storm, the metal mesh in a microwave door, a shielded cable.",
+   "src": "audio/9032060bf6374e00.mp3",
+   "start": 100.75,
+   "end": 116.32,
+   "dur": 15.6
+  },
+  {
+   "section": 3,
+   "voice": "Charon",
+   "at": [
+    "finishes the argument"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "Gauss's law finishes the argument. Draw a Gaussian surface just inside the metal. The field is zero everywhere on it, so the flux is zero, so the enclosed charge is zero. Any excess charge on a conductor sits on its outer surface. So, four conductor facts to remember. The field is zero inside. Excess charge sits on the surface. The field just outside is perpendicular to the surface, with size sigma over epsilon naught. And a closed metal shell shields its inside.",
+   "src": "audio/9032060bf6374e00.mp3",
+   "start": 116.32,
+   "end": 150.14,
+   "dur": 33.8
+  },
+  {
+   "section": 4,
+   "voice": "Achird",
+   "at": [
+    "Classic mistakes"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "Three classic mistakes. One: thinking zero flux means zero field. A closed surface with no charge inside can have strong field all over it; it just has as much going in as coming out. Two: using Gauss to find the field where there's no symmetry. The law is still true, but E isn't the same over the surface, so you can't pull it out of the sum. And three: measuring theta from the surface, instead of from its normal.",
+   "src": "audio/7340428928447f7f.mp3",
+   "start": 0,
+   "end": 31.82,
+   "dur": 31.8
+  },
+  {
+   "section": 4,
+   "voice": "Achird",
+   "at": [],
+   "sel": ".quiz",
+   "figure": null,
+   "step": null,
+   "text": "That's Gauss's law. Try the checkpoint below, then on to electric potential.",
+   "src": "audio/7340428928447f7f.mp3",
+   "start": 31.82,
+   "end": 37.18,
+   "dur": 5.4
+  }
+ ]
+}
