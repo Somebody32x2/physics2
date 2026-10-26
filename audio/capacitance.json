@@ -1,0 +1,326 @@
+{
+ "chapter": "capacitance",
+ "blocks": [
+  {
+   "section": 0,
+   "voice": "Achird",
+   "at": [
+    "is any two conductors near each other"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "A capacitor is just two conductors sitting near each other. One holds a charge of plus Q, and the other holds minus Q. Hook it up to a battery, and the battery pushes charge from one conductor over to the other. It keeps pushing until the voltage between them matches the battery. The more charge a pair of conductors needs to reach a given voltage, the bigger its capacitance.",
+   "src": "audio/1dc9cb624c695569.mp3",
+   "start": 0,
+   "end": 26.66,
+   "dur": 26.7
+  },
+  {
+   "section": 0,
+   "voice": "Achird",
+   "at": [
+    "The standard example is two flat plates"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "The classic example is two flat plates, facing each other across a small gap. Remember from the Gauss chapter: between two oppositely charged sheets, the field is uniform. E equals sigma over epsilon naught. And from the potential chapter, a uniform field over a gap gives V equals E times d. Put the two together, and charge and voltage turn out to be simply proportional. That constant of proportionality gets its own name. It's the capacitance, C.",
+   "src": "audio/1dc9cb624c695569.mp3",
+   "start": 26.66,
+   "end": 51.17,
+   "dur": 24.5
+  },
+  {
+   "section": 0,
+   "voice": "Achird",
+   "at": [
+    "charge on the + plate"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "So Q equals C times V. C is the charge stored per volt, and it depends only on the shape, size, and filling of the conductors, never on Q or V themselves. Its unit is the farad, one coulomb per volt. That's huge: real capacitors run from picofarads to millifarads.",
+   "src": "audio/1dc9cb624c695569.mp3",
+   "start": 51.17,
+   "end": 75.05,
+   "dur": 23.9
+  },
+  {
+   "section": 0,
+   "voice": "Achird",
+   "at": [
+    "area of each plate"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "For parallel plates, C equals kappa, times epsilon naught, times the area A, all over the gap d. Bigger plates hold more charge at the same voltage. A smaller gap also means more capacitance. And filling the gap with an insulator multiplies C by kappa, the dielectric constant: one for air, two to ten for plastics and glass.",
+   "src": "audio/1dc9cb624c695569.mp3",
+   "start": 75.05,
+   "end": 100.94,
+   "dur": 25.9
+  },
+  {
+   "section": 1,
+   "voice": "Charon",
+   "at": [],
+   "sel": null,
+   "figure": "Sandbox: a parallel-plate capacitor",
+   "step": null,
+   "text": "Try the sandbox. Each plus sign stands for a tenth of a nanocoulomb. With two hundred square centimeters, a two millimeter gap, and nine volts, you get about eighty-eight picofarads, and about eight tenths of a nanocoulomb. Now double the area, then halve the gap. Which change also makes the field stronger?",
+   "src": "audio/56f11d185472dab2.mp3",
+   "start": 0,
+   "end": 22.94,
+   "dur": 22.9
+  },
+  {
+   "section": 1,
+   "voice": "Charon",
+   "at": [
+    "Notice what the field does"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "Here's what happens. Bigger plates at the same voltage add more charge, but spread it over more area, so E equals V over d doesn't change: the extra lines just cover more ground. A smaller gap at the same voltage makes the field stronger, and pulls more charge onto the same plates.",
+   "src": "audio/56f11d185472dab2.mp3",
+   "start": 22.94,
+   "end": 41.99,
+   "dur": 19.1
+  },
+  {
+   "section": 1,
+   "voice": "Charon",
+   "at": [
+    "Charging a capacitor takes work"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "Charging a capacitor takes work: each new bit of charge has to be pushed onto a plate that already repels it. That work is stored, and you get it back when the capacitor discharges, in a camera flash, or a defibrillator. The best way to think about where it lives: in the electric field between the plates.",
+   "src": "audio/56f11d185472dab2.mp3",
+   "start": 41.99,
+   "end": 61.76,
+   "dur": 19.8
+  },
+  {
+   "section": 1,
+   "voice": "Charon",
+   "at": [
+    "not 1: the average voltage while charging"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "The stored energy has three forms: one half C V squared, Q squared over two C, or one half Q V. They're the same formula, switched with Q equals C V. Pick the one whose variables are held fixed. With a battery attached, V is fixed, so use one half C V squared. For an isolated capacitor, Q is fixed, so use Q squared over two C. And the one half? It's there because the voltage only averages V over two while charging up from zero.",
+   "src": "audio/56f11d185472dab2.mp3",
+   "start": 61.76,
+   "end": 96.98,
+   "dur": 35.2
+  },
+  {
+   "section": 2,
+   "voice": "Achird",
+   "at": [],
+   "sel": null,
+   "figure": "Pulling the plates apart",
+   "step": 0,
+   "text": "Let's pull the plates apart, with the battery connected. The plates start one millimeter apart on a ten volt battery: one hundred seventy-seven picofarads, and one point seven seven nanocoulombs. Twelve plus signs, twelve minus signs, and one field line from each plus.",
+   "src": "audio/4adbfc776fd6d530.mp3",
+   "start": 0,
+   "end": 21.81,
+   "dur": 21.8
+  },
+  {
+   "section": 2,
+   "voice": "Achird",
+   "at": [],
+   "sel": null,
+   "figure": "Pulling the plates apart",
+   "step": 1,
+   "text": "Pull the gap to two millimeters. The battery still holds V at ten volts. C goes as one over d, so it halves, and so Q equals C V halves too: charge flows back into the battery. And E equals V over d halves as well.",
+   "src": "audio/4adbfc776fd6d530.mp3",
+   "start": 21.81,
+   "end": 38.38,
+   "dur": 16.6
+  },
+  {
+   "section": 2,
+   "voice": "Achird",
+   "at": [],
+   "sel": null,
+   "figure": "Pulling the plates apart",
+   "step": 2,
+   "text": "At three millimeters, C, Q, and E are all down to a third. The stored energy, one half C V squared, falls to about three nanojoules. With V fixed, the energy follows C.",
+   "src": "audio/4adbfc776fd6d530.mp3",
+   "start": 38.38,
+   "end": 53.93,
+   "dur": 15.5
+  },
+  {
+   "section": 2,
+   "voice": "Achird",
+   "at": [],
+   "sel": null,
+   "figure": "Pulling the plates apart",
+   "step": 3,
+   "text": "So where did the energy go? You did positive work pulling, because the plates attract, and the field lost energy too. Both went into pushing charge back into the battery: recharging it. Now switch to Isolated and step through again. The gap does the same thing, but the consequences don't: Q stays trapped, so V triples instead, and the energy triples too.",
+   "src": "audio/4adbfc776fd6d530.mp3",
+   "start": 53.93,
+   "end": 81.11,
+   "dur": 27.2
+  },
+  {
+   "section": 2,
+   "voice": "Achird",
+   "at": [
+    "First ask: what is held fixed?"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "So, for any capacitor problem where something changes, first ask: what is held fixed? Connected to a battery, V is fixed, and Q adjusts. Isolated, Q is fixed, and V adjusts. C itself only changes when the geometry or the filling changes.",
+   "src": "audio/4adbfc776fd6d530.mp3",
+   "start": 81.11,
+   "end": 98.42,
+   "dur": 17.3
+  },
+  {
+   "section": 3,
+   "voice": "Charon",
+   "at": [
+    "An insulator in the gap"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "An insulator in the gap, called a dielectric, raises the capacitance. It contains no free charge, but its molecules stretch in the field into tiny dipoles. Let's see how that works.",
+   "src": "audio/a6b2b2721837c417.mp3",
+   "start": 0,
+   "end": 12.62,
+   "dur": 12.6
+  },
+  {
+   "section": 3,
+   "voice": "Charon",
+   "at": [],
+   "sel": null,
+   "figure": "What a dielectric does",
+   "step": 0,
+   "text": "Here's a charged, isolated capacitor, so Q is fixed. Twelve field lines run from the plus plate to the minus plate. Beside it, a slab of plastic: neutral, but its molecules can stretch.",
+   "src": "audio/a6b2b2721837c417.mp3",
+   "start": 12.62,
+   "end": 27.08,
+   "dur": 14.5
+  },
+  {
+   "section": 3,
+   "voice": "Charon",
+   "at": [],
+   "sel": null,
+   "figure": "What a dielectric does",
+   "step": 1,
+   "text": "Slide the slab in. Each molecule is still neutral overall, so on its own, the slab adds no net charge.",
+   "src": "audio/a6b2b2721837c417.mp3",
+   "start": 27.08,
+   "end": 35.54,
+   "dur": 8.5
+  },
+  {
+   "section": 3,
+   "voice": "Charon",
+   "at": [],
+   "sel": null,
+   "figure": "What a dielectric does",
+   "step": 2,
+   "text": "But the field polarizes the molecules. Plus ends get pushed along the field, minus ends the other way. Every molecule becomes a small dipole, lined up with the field.",
+   "src": "audio/a6b2b2721837c417.mp3",
+   "start": 35.54,
+   "end": 47.64,
+   "dur": 12.1
+  },
+  {
+   "section": 3,
+   "voice": "Charon",
+   "at": [],
+   "sel": null,
+   "figure": "What a dielectric does",
+   "step": 3,
+   "text": "Inside the slab, neighboring plus and minus ends cancel. At the surfaces they don't: a layer of negative bound charge faces the plus plate, and positive faces the minus plate. Eight of the twelve lines end on it, and only four pass through. So the field inside is E naught over kappa.",
+   "src": "audio/a6b2b2721837c417.mp3",
+   "start": 47.64,
+   "end": 70.35,
+   "dur": 22.7
+  },
+  {
+   "section": 3,
+   "voice": "Charon",
+   "at": [],
+   "sel": null,
+   "figure": "What a dielectric does",
+   "step": 4,
+   "text": "Q hasn't changed, but V equals E d is now a third of what it was. So C, which is Q over V, is three times bigger: C equals kappa times C naught. And the stored energy drops to a third, which means the field actually pulls the slab in.",
+   "src": "audio/a6b2b2721837c417.mp3",
+   "start": 70.35,
+   "end": 91.18,
+   "dur": 20.8
+  },
+  {
+   "section": 4,
+   "voice": "Achird",
+   "at": [
+    "Capacitors in circuits combine by the opposite rules"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "Capacitors in circuits combine by the opposite rules from resistors. Side by side, in parallel, they share the same voltage, and act like one plate of the combined area, so the capacitances just add. End to end, in series, they carry the same charge, the voltages add, and one over C equivalent equals one over C one plus one over C two. That's smaller than either one: it acts like a wider gap.",
+   "src": "audio/02a593022eef83c5.mp3",
+   "start": 0,
+   "end": 28.36,
+   "dur": 28.4
+  },
+  {
+   "section": 4,
+   "voice": "Achird",
+   "at": [],
+   "sel": null,
+   "figure": "Two capacitors on 12 V",
+   "step": null,
+   "text": "Here are two and six microfarads on twelve volts. In parallel, both get the full twelve volts, and together they make eight microfarads. Switch to series: they share eighteen microcoulombs, and the voltage splits nine and three. The smaller capacitor takes the larger share of the voltage.",
+   "src": "audio/02a593022eef83c5.mp3",
+   "start": 28.36,
+   "end": 49.73,
+   "dur": 21.4
+  },
+  {
+   "section": 4,
+   "voice": "Achird",
+   "at": [
+    "Classic mistake"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "A classic mistake: using the resistor rules for capacitors. For capacitors, parallel adds directly, and series adds reciprocals: the reverse of resistors. A quick check: in series, the equivalent capacitance is always smaller than the smallest one in the chain.",
+   "src": "audio/02a593022eef83c5.mp3",
+   "start": 49.73,
+   "end": 68.6,
+   "dur": 18.9
+  },
+  {
+   "section": 4,
+   "voice": "Achird",
+   "at": [],
+   "sel": ".quiz",
+   "figure": null,
+   "step": null,
+   "text": "That's capacitors. Try the checkpoint below, then on to current and resistance.",
+   "src": "audio/02a593022eef83c5.mp3",
+   "start": 68.6,
+   "end": 74.54,
+   "dur": 5.9
+  }
+ ]
+}
