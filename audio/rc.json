@@ -1,0 +1,216 @@
+{
+ "chapter": "rc",
+ "blocks": [
+  {
+   "section": 0,
+   "voice": "Achird",
+   "at": [
+    "Put a capacitor in a circuit and things start to take"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "Put a capacitor in a circuit, and things start to take time. A resistor alone reacts instantly: the current is V over R the moment you connect it. But a capacitor in series with a resistor fills up gradually. At first it's empty and offers no opposition, so current rushes in at the emf over R. As charge builds up, the capacitor's own voltage, q over C, pushes back against the battery. The voltage left for the resistor shrinks, and so does the current. The closer it gets to full, the slower it fills.",
+   "src": "audio/882e8b8739e10f0e.mp3",
+   "start": 0,
+   "end": 33.92,
+   "dur": 33.9
+  },
+  {
+   "section": 0,
+   "voice": "Achird",
+   "at": [
+    "is the signature of an exponential"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "That \"rate proportional to what's left\" is the signature of an exponential: the same shape as radioactive decay later in the course, or Newton's law of cooling. In calculus terms, the loop rule becomes a differential equation, whose solution is the exponential below. You don't need to solve it. You need to read its shape.",
+   "src": "audio/882e8b8739e10f0e.mp3",
+   "start": 33.92,
+   "end": 58.85,
+   "dur": 24.9
+  },
+  {
+   "section": 0,
+   "voice": "Achird",
+   "at": [
+    "time constant (tau)"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "One number sets how fast an R C circuit responds: the time constant, tau, which equals R times C. A bigger R means a smaller current to fill with. A bigger C means more charge to deliver. Either one slows it down, in proportion.",
+   "src": "audio/882e8b8739e10f0e.mp3",
+   "start": 58.85,
+   "end": 75.82,
+   "dur": 17
+  },
+  {
+   "section": 1,
+   "voice": "Charon",
+   "at": [
+    "final charge, when"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "Charging from empty: the charge is C times the emf, times one minus e to the minus t over tau. It climbs toward its final value, C times the emf, when the capacitor's voltage equals the battery's. The current is the emf over R, times e to the minus t over tau: it decays from its starting value toward zero. Both run on the same clock, tau. The factor e to the minus t over tau is the fraction still to go: thirty-seven percent after one tau, and under one percent after five.",
+   "src": "audio/565f5b1e1723f4f9.mp3",
+   "start": 0,
+   "end": 36.17,
+   "dur": 36.2
+  },
+  {
+   "section": 1,
+   "voice": "Charon",
+   "at": [
+    "charge at the moment the discharge starts"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "Discharging, with the battery removed, the capacitor plays the battery, and pushes current backward through the resistor. The charge is Q naught times e to the minus t over tau, and the charge, the voltage, and the current all shrink by the same factor every tau.",
+   "src": "audio/565f5b1e1723f4f9.mp3",
+   "start": 36.17,
+   "end": 53.59,
+   "dur": 17.4
+  },
+  {
+   "section": 1,
+   "voice": "Charon",
+   "at": [],
+   "sel": null,
+   "figure": "Charging and discharging, live",
+   "step": null,
+   "text": "Watch it happen live. With four kilohms and five hundred microfarads, tau is two seconds, marked by the dashed line. The teal dots show the current, fast at first, then slowing down. Try doubling R, then doubling C instead. Same effect on tau. And drag \"Scrub time\" to freeze any instant.",
+   "src": "audio/565f5b1e1723f4f9.mp3",
+   "start": 53.59,
+   "end": 76.3,
+   "dur": 22.7
+  },
+  {
+   "section": 2,
+   "voice": "Achird",
+   "at": [
+    "Two shortcuts that answer most questions"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "Here are two shortcuts that answer most questions. Right after a switch moves, a capacitor's voltage can't jump, because its charge needs time to change. So an empty capacitor acts like a wire. Long afterward, nothing changes anymore, so no current flows into it: it acts like a break. Use those to find the currents at the start and at the end, without any exponentials.",
+   "src": "audio/d815c86c99406159.mp3",
+   "start": 0,
+   "end": 25.53,
+   "dur": 25.5
+  },
+  {
+   "section": 2,
+   "voice": "Achird",
+   "at": [],
+   "sel": null,
+   "figure": "Counting time constants",
+   "step": 0,
+   "text": "Now let's count time constants. At time zero the capacitor is empty, so its voltage is zero, and the whole emf sits across the resistor. The current starts at its maximum, the emf over R. An uncharged capacitor acts like a plain wire.",
+   "src": "audio/d815c86c99406159.mp3",
+   "start": 25.53,
+   "end": 43.22,
+   "dur": 17.7
+  },
+  {
+   "section": 2,
+   "voice": "Achird",
+   "at": [],
+   "sel": null,
+   "figure": "Counting time constants",
+   "step": 1,
+   "text": "After one time constant, the charge has reached sixty-three percent of its final value, and the current has fallen to thirty-seven percent. The two always add up to a hundred percent, because the resistor's and the capacitor's voltages add up to the emf.",
+   "src": "audio/d815c86c99406159.mp3",
+   "start": 43.22,
+   "end": 58.69,
+   "dur": 15.5
+  },
+  {
+   "section": 2,
+   "voice": "Achird",
+   "at": [],
+   "sel": null,
+   "figure": "Counting time constants",
+   "step": 2,
+   "text": "After two tau: eighty-six percent. Each tau closes the same fraction, sixty-three percent, of whatever gap is left. So progress slows down.",
+   "src": "audio/d815c86c99406159.mp3",
+   "start": 58.69,
+   "end": 70.09,
+   "dur": 11.4
+  },
+  {
+   "section": 2,
+   "voice": "Achird",
+   "at": [],
+   "sel": null,
+   "figure": "Counting time constants",
+   "step": 3,
+   "text": "After three tau: ninety-five percent, with the current down to five percent.",
+   "src": "audio/d815c86c99406159.mp3",
+   "start": 70.09,
+   "end": 75.94,
+   "dur": 5.8
+  },
+  {
+   "section": 2,
+   "voice": "Achird",
+   "at": [],
+   "sel": null,
+   "figure": "Counting time constants",
+   "step": 4,
+   "text": "And after five tau: over ninety-nine percent, which counts as full. Now the capacitor's voltage equals the emf, and no current flows. A charged capacitor acts like a break in the circuit.",
+   "src": "audio/d815c86c99406159.mp3",
+   "start": 75.94,
+   "end": 89.98,
+   "dur": 14
+  },
+  {
+   "section": 3,
+   "voice": "Charon",
+   "at": [
+    "Where it shows up: camera flashes"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "Where does this show up? Camera flashes and defibrillators, which charge slowly from a battery and dump fast through a small resistance. The delay in windshield wipers and blinking lights. And every digital circuit, where the R C time of tiny wires and transistor gates limits how fast a chip can switch. In the inductance chapter, you'll meet the R L circuit, which has the same exponential, with tau equal to L over R.",
+   "src": "audio/3f607fd1e23cc9e9.mp3",
+   "start": 0,
+   "end": 28.21,
+   "dur": 28.2
+  },
+  {
+   "section": 3,
+   "voice": "Charon",
+   "at": [
+    "Classic mistakes"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "Two classic mistakes. Reading tau as \"the time to fully charge\". After one tau, it's only sixty-three percent charged; full takes about five tau. And unit slips: kilohms times microfarads gives MILLIseconds, not seconds.",
+   "src": "audio/3f607fd1e23cc9e9.mp3",
+   "start": 28.21,
+   "end": 46.26,
+   "dur": 18
+  },
+  {
+   "section": 3,
+   "voice": "Charon",
+   "at": [],
+   "sel": ".quiz",
+   "figure": null,
+   "step": null,
+   "text": "That's R C circuits, and the end of the circuits part. Try the checkpoint below, then on to magnetism.",
+   "src": "audio/3f607fd1e23cc9e9.mp3",
+   "start": 46.26,
+   "end": 53.9,
+   "dur": 7.6
+  }
+ ]
+}

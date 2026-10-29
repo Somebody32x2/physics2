@@ -1,0 +1,322 @@
+{
+ "chapter": "dc-circuits",
+ "blocks": [
+  {
+   "section": 0,
+   "voice": "Charon",
+   "at": [
+    "A circuit is a network of batteries and resistors"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "A circuit is a network of batteries and resistors, joined by wires. Solving it means finding the current in every branch, and the voltage across every element. Two arrangements cover most simple circuits. In series, elements sit one after another on a single path: the same current flows through each, and their voltages add up. In parallel, elements connect across the same two points: they share the same voltage, and their currents add up.",
+   "src": "audio/59a46872e0950ed9.mp3",
+   "start": 0,
+   "end": 28.09,
+   "dur": 28.1
+  },
+  {
+   "section": 0,
+   "voice": "Charon",
+   "at": [
+    "the single resistor that draws the same current"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "So in series, resistances simply add. Series makes the path longer, so the total is bigger than any one piece. In parallel, it's the reciprocals that add: one over R equals one over R one, plus one over R two. Parallel adds lanes, so the total is smaller than the smallest branch. Two equal resistors in parallel give half of one.",
+   "src": "audio/59a46872e0950ed9.mp3",
+   "start": 28.09,
+   "end": 51.89,
+   "dur": 23.8
+  },
+  {
+   "section": 0,
+   "voice": "Charon",
+   "at": [
+    "Light bulbs make this visible"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "Light bulbs make all this visible. Treat each bulb as a resistor; its brightness is the power it dissipates, I squared R, or V squared over R. With identical bulbs, brightness ranks the same as the current through each one. The battery here is ideal: twelve volts, no matter what you connect.",
+   "src": "audio/59a46872e0950ed9.mp3",
+   "start": 51.89,
+   "end": 71.45,
+   "dur": 19.6
+  },
+  {
+   "section": 1,
+   "voice": "Achird",
+   "at": [],
+   "sel": null,
+   "figure": "Bulbs on a 12 V battery",
+   "step": null,
+   "text": "These are identical twelve ohm bulbs. The glow, and the number under each bulb, is its power, and the teal dots move at a speed proportional to the current. Switch between one bulb, series, and parallel, and compare the brightness. In the last circuit, click the switch to open and close bulb C's branch, and watch what happens to A and B.",
+   "src": "audio/dae1312f002883f3.mp3",
+   "start": 0,
+   "end": 21.04,
+   "dur": 21
+  },
+  {
+   "section": 1,
+   "voice": "Achird",
+   "at": [
+    "Adding a second bulb in"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "Adding a second bulb in series doubles the resistance and halves the current, so each bulb gets a quarter of the power: three watts instead of twelve. Adding it in parallel leaves the first bulb exactly as bright, because it still has the full twelve volts across it. The battery just supplies twice the current, two amps, and twice the power. That's how the outlets in your house are wired.",
+   "src": "audio/dae1312f002883f3.mp3",
+   "start": 21.04,
+   "end": 44.69,
+   "dur": 23.7
+  },
+  {
+   "section": 1,
+   "voice": "Achird",
+   "at": [
+    "Series shares current, parallel shares voltage"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "So: series shares current, parallel shares voltage. Elements on one path carry the same current, and split the voltage. Elements across the same two points have the same voltage, and split the current. Every reduction step starts by deciding which one you're looking at. Only then do you add R, or one over R.",
+   "src": "audio/dae1312f002883f3.mp3",
+   "start": 44.69,
+   "end": 65.9,
+   "dur": 21.2
+  },
+  {
+   "section": 2,
+   "voice": "Charon",
+   "at": [
+    "With those rules, many networks collapse"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "With those rules, many networks collapse to a single resistor. Find a pair that's cleanly in series or in parallel, replace it, and repeat. Then work back out to get each branch.",
+   "src": "audio/6f5e06b55fc401b6.mp3",
+   "start": 0,
+   "end": 13,
+   "dur": 13
+  },
+  {
+   "section": 2,
+   "voice": "Charon",
+   "at": [],
+   "sel": null,
+   "figure": "Reducing a network",
+   "step": 0,
+   "text": "Here's a network with four resistors on an eighteen volt battery. To find the battery current, we'll replace pieces with single equivalent resistors, one safe step at a time.",
+   "src": "audio/6f5e06b55fc401b6.mp3",
+   "start": 13,
+   "end": 24.2,
+   "dur": 11.2
+  },
+  {
+   "section": 2,
+   "voice": "Charon",
+   "at": [],
+   "sel": null,
+   "figure": "Reducing a network",
+   "step": 1,
+   "text": "R two and R three are in series: one path, with nothing branching off between them, so they carry the same current. Resistances add: four plus eight, twelve ohms.",
+   "src": "audio/6f5e06b55fc401b6.mp3",
+   "start": 24.2,
+   "end": 36.72,
+   "dur": 12.5
+  },
+  {
+   "section": 2,
+   "voice": "Charon",
+   "at": [],
+   "sel": null,
+   "figure": "Reducing a network",
+   "step": 2,
+   "text": "That twelve ohms and R four are in parallel: both connect the same two points, so they share the same voltage. Reciprocals add, and twelve in parallel with twelve gives six ohms. Smaller than either: a second path makes it easier for current.",
+   "src": "audio/6f5e06b55fc401b6.mp3",
+   "start": 36.72,
+   "end": 55.98,
+   "dur": 19.3
+  },
+  {
+   "section": 2,
+   "voice": "Charon",
+   "at": [],
+   "sel": null,
+   "figure": "Reducing a network",
+   "step": 3,
+   "text": "Now R one and that six ohms are in series: three plus six, nine ohms.",
+   "src": "audio/6f5e06b55fc401b6.mp3",
+   "start": 55.98,
+   "end": 63.88,
+   "dur": 7.9
+  },
+  {
+   "section": 2,
+   "voice": "Charon",
+   "at": [],
+   "sel": null,
+   "figure": "Reducing a network",
+   "step": 4,
+   "text": "One resistor left. The current out of the battery is the emf over the total: eighteen over nine, two amps.",
+   "src": "audio/6f5e06b55fc401b6.mp3",
+   "start": 63.88,
+   "end": 74.23,
+   "dur": 10.4
+  },
+  {
+   "section": 2,
+   "voice": "Charon",
+   "at": [],
+   "sel": null,
+   "figure": "Reducing a network",
+   "step": 5,
+   "text": "Now unfold it. R one carries the two amps, so it drops six volts, leaving twelve volts across the parallel part. R four gets twelve over twelve, one amp. The R two and R three path gets the other amp, and splits its twelve volts into four and eight. Check the junction: one plus one is two amps. It works.",
+   "src": "audio/6f5e06b55fc401b6.mp3",
+   "start": 74.23,
+   "end": 100.85,
+   "dur": 26.6
+  },
+  {
+   "section": 3,
+   "voice": "Achird",
+   "at": [
+    "Some circuits do not reduce"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "Some circuits don't reduce, typically when there's more than one battery. Then you use the two rules that always work: Kirchhoff's rules. They aren't new physics; they're just two conservation laws, written for circuits.",
+   "src": "audio/5efcfc97202339f4.mp3",
+   "start": 0,
+   "end": 14.53,
+   "dur": 14.5
+  },
+  {
+   "section": 3,
+   "voice": "Achird",
+   "at": [
+    "crossing a resistor against its current"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "The junction rule: charge doesn't pile up at a junction, so the current in equals the current out. The loop rule: walking around any closed loop, the rises and drops in potential add up to zero. Crossing a battery from minus to plus counts as plus the emf. Crossing a resistor along its current counts as minus I R, and against its current, plus I R.",
+   "src": "audio/5efcfc97202339f4.mp3",
+   "start": 14.53,
+   "end": 40,
+   "dur": 25.5
+  },
+  {
+   "section": 3,
+   "voice": "Achird",
+   "at": [],
+   "sel": null,
+   "figure": "Two loops, two rules",
+   "step": 0,
+   "text": "Here are two batteries and three branches. No pair of resistors is in series or in parallel, so reduction fails. Step one: give each branch a current, and guess its direction. A wrong guess is harmless; it just comes out negative.",
+   "src": "audio/5efcfc97202339f4.mp3",
+   "start": 40,
+   "end": 55.59,
+   "dur": 15.6
+  },
+  {
+   "section": 3,
+   "voice": "Achird",
+   "at": [],
+   "sel": null,
+   "figure": "Two loops, two rules",
+   "step": 1,
+   "text": "The junction rule. At the top junction, I one and I two arrive, and I three leaves. So I one plus I two equals I three.",
+   "src": "audio/5efcfc97202339f4.mp3",
+   "start": 55.59,
+   "end": 66.47,
+   "dur": 10.9
+  },
+  {
+   "section": 3,
+   "voice": "Achird",
+   "at": [],
+   "sel": null,
+   "figure": "Two loops, two rules",
+   "step": 2,
+   "text": "Now the loop rule, on the left loop, walking clockwise. Up through the twelve volt battery is plus twelve. Through R one, along I one, is minus two I one. Down R three, along I three, is minus three I three. And the sum is zero.",
+   "src": "audio/5efcfc97202339f4.mp3",
+   "start": 66.47,
+   "end": 86.42,
+   "dur": 20
+  },
+  {
+   "section": 3,
+   "voice": "Achird",
+   "at": [],
+   "sel": null,
+   "figure": "Two loops, two rules",
+   "step": 3,
+   "text": "The right loop, walking counterclockwise so we again go with the guessed currents: plus three, minus three I two, minus three I three, equals zero. That's three equations, for three unknowns.",
+   "src": "audio/5efcfc97202339f4.mp3",
+   "start": 86.42,
+   "end": 101.79,
+   "dur": 15.4
+  },
+  {
+   "section": 3,
+   "voice": "Achird",
+   "at": [],
+   "sel": null,
+   "figure": "Two loops, two rules",
+   "step": 4,
+   "text": "Solve them: I one is three amps, I two is minus one amp, and I three is two amps. Check: three plus minus one is two. The dots move at a speed proportional to each current.",
+   "src": "audio/5efcfc97202339f4.mp3",
+   "start": 101.79,
+   "end": 116.51,
+   "dur": 14.7
+  },
+  {
+   "section": 3,
+   "voice": "Achird",
+   "at": [],
+   "sel": null,
+   "figure": "Two loops, two rules",
+   "step": 5,
+   "text": "I two came out negative, so it really flows the other way, down through the three volt battery from plus to minus. The twelve volt battery is charging the three volt one, which absorbs three watts.",
+   "src": "audio/5efcfc97202339f4.mp3",
+   "start": 116.51,
+   "end": 130.82,
+   "dur": 14.3
+  },
+  {
+   "section": 4,
+   "voice": "Charon",
+   "at": [
+    "Classic mistakes"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "A few classic mistakes. Sign errors in the loop rule: the sign of an I R term depends on whether you walk with or against the current you labeled, not on the direction of the loop. When a current comes out negative, don't re-solve: the size is right, it just flows the other way. And meters: an ammeter goes in series, so the current passes through it, and a voltmeter goes in parallel, across the element.",
+   "src": "audio/34d1a007572d3ca8.mp3",
+   "start": 0,
+   "end": 29.52,
+   "dur": 29.5
+  },
+  {
+   "section": 4,
+   "voice": "Charon",
+   "at": [],
+   "sel": ".quiz",
+   "figure": null,
+   "step": null,
+   "text": "That's D C circuits. Try the checkpoint below, then on to R C circuits.",
+   "src": "audio/34d1a007572d3ca8.mp3",
+   "start": 29.52,
+   "end": 35.14,
+   "dur": 5.6
+  }
+ ]
+}
