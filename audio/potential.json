@@ -13,8 +13,8 @@
    "text": "In Physics One, gravity had a potential energy. Lift a mass m by a height h, and you store m g h, which comes back as kinetic energy when it falls. The electric force is also conservative, so a charge in an electric field has a potential energy too. Push a positive charge toward another positive charge, and you store energy. Let go, and it flies off.",
    "src": "audio/bff066760fe6b861.mp3",
    "start": 0,
-   "end": 26.75,
-   "dur": 26.8
+   "end": 27.03,
+   "dur": 27
   },
   {
    "section": 0,
@@ -27,8 +27,8 @@
    "step": null,
    "text": "As with the field, it pays to divide out the charge you place. The electric potential, V, is the potential energy per coulomb: a number at every point, belonging to the source charges. Think of it as a height map, a landscape with hills at positive charges and pits at negative charges. Its unit, joules per coulomb, is the volt.",
    "src": "audio/bff066760fe6b861.mp3",
-   "start": 26.75,
-   "end": 51.17,
+   "start": 27.03,
+   "end": 51.45,
    "dur": 24.4
   },
   {
@@ -42,8 +42,8 @@
    "step": null,
    "text": "So V equals U over q. Turned around: a charge q moved through a potential difference, delta V, changes its potential energy by q times delta V. Only differences in V matter. When people say \"voltage\", they mean a potential difference.",
    "src": "audio/bff066760fe6b861.mp3",
-   "start": 51.17,
-   "end": 69.99,
+   "start": 51.45,
+   "end": 70.26,
    "dur": 18.8
   },
   {
@@ -57,9 +57,9 @@
    "step": null,
    "text": "A nine volt battery keeps one terminal nine volts above the other, so every coulomb that goes around the circuit gets nine joules. For a single particle, the natural unit is the electron-volt: the energy an electron gains crossing one volt, about one point six times ten to the minus nineteen joules. You'll meet it again in atoms and nuclei.",
    "src": "audio/bff066760fe6b861.mp3",
-   "start": 69.99,
-   "end": 96.14,
-   "dur": 26.2
+   "start": 70.26,
+   "end": 96.93,
+   "dur": 26.7
   },
   {
    "section": 0,
@@ -72,9 +72,9 @@
    "step": null,
    "text": "The next picture is the key to every sign question in this chapter: the potential along the line through a dipole, drawn as a landscape, with charges rolling on it.",
    "src": "audio/bff066760fe6b861.mp3",
-   "start": 96.14,
+   "start": 96.93,
    "end": 108.41,
-   "dur": 12.3
+   "dur": 11.5
   },
   {
    "section": 1,
@@ -86,8 +86,8 @@
    "text": "Here's the potential along the line through a dipole: plus one and minus one nanocoulomb, twenty-eight centimeters apart. It's a landscape. A peak at the positive charge, a pit at the negative charge, and exactly zero halfway between.",
    "src": "audio/10f6f5f4ad6bd345.mp3",
    "start": 0,
-   "end": 16.32,
-   "dur": 16.3
+   "end": 17.01,
+   "dur": 17
   },
   {
    "section": 1,
@@ -98,9 +98,9 @@
    "step": 1,
    "text": "Put a small positive charge seven centimeters from the plus charge, where V is about plus eighty-six volts. The force on it points downhill on the curve, like a ball on a hillside.",
    "src": "audio/10f6f5f4ad6bd345.mp3",
-   "start": 16.32,
-   "end": 29.51,
-   "dur": 13.2
+   "start": 17.01,
+   "end": 30.06,
+   "dur": 13
   },
   {
    "section": 1,
@@ -111,8 +111,8 @@
    "step": 2,
    "text": "Let go, and it rolls downhill, to a spot where V is about minus one hundred twenty-three volts. It dropped two hundred nine volts, so a proton would gain two hundred nine electron-volts of kinetic energy.",
    "src": "audio/10f6f5f4ad6bd345.mp3",
-   "start": 29.51,
-   "end": 44.31,
+   "start": 30.06,
+   "end": 44.91,
    "dur": 14.8
   },
   {
@@ -124,9 +124,9 @@
    "step": 3,
    "text": "Now put an electron at the same spot. Same field, opposite charge, so the force flips. It gets pushed uphill in V, toward the positive charge.",
    "src": "audio/10f6f5f4ad6bd345.mp3",
-   "start": 44.31,
-   "end": 56.71,
-   "dur": 12.4
+   "start": 44.91,
+   "end": 57.69,
+   "dur": 12.8
   },
   {
    "section": 1,
@@ -137,9 +137,9 @@
    "step": 4,
    "text": "Here's the cure for the confusion. Plot the electron's potential energy, U equals q V, the colored curve. With q negative, the landscape flips upside down. And on its own energy landscape, the electron rolls downhill too.",
    "src": "audio/10f6f5f4ad6bd345.mp3",
-   "start": 56.71,
+   "start": 57.69,
    "end": 75.01,
-   "dur": 18.3
+   "dur": 17.3
   },
   {
    "section": 1,
@@ -151,8 +151,8 @@
    "text": "It rolls to the left, gaining two hundred nine electron-volts, exactly what the proton gained going the other way. Every charge rolls downhill in U. Only positive ones also roll downhill in V.",
    "src": "audio/10f6f5f4ad6bd345.mp3",
    "start": 75.01,
-   "end": 88.6,
-   "dur": 13.6
+   "end": 90.07,
+   "dur": 15.1
   },
   {
    "section": 1,
@@ -163,9 +163,9 @@
    "step": 6,
    "text": "Finally, the field arrows along the axis. E points downhill in V everywhere, and it's longest where the slope is steepest, near the charges. Where V is flat, the field is zero.",
    "src": "audio/10f6f5f4ad6bd345.mp3",
-   "start": 88.6,
-   "end": 103.68,
-   "dur": 15.1
+   "start": 90.07,
+   "end": 104.19,
+   "dur": 14.1
   },
   {
    "section": 1,
@@ -178,9 +178,9 @@
    "step": null,
    "text": "So, the downhill rules. E points downhill in V. Positive charges are pushed downhill in V, and negative charges uphill. And every charge, left alone, moves to lower potential energy, U equals q V, turning the energy it loses into kinetic energy.",
    "src": "audio/10f6f5f4ad6bd345.mp3",
-   "start": 103.68,
+   "start": 104.19,
    "end": 124.7,
-   "dur": 21
+   "dur": 20.5
   },
   {
    "section": 2,
@@ -194,8 +194,8 @@
    "text": "The slope connection works both ways. The field is the downhill slope of the potential, and the potential difference is the field times distance.",
    "src": "audio/717f84142e253621.mp3",
    "start": 0,
-   "end": 8.92,
-   "dur": 8.9
+   "end": 9.09,
+   "dur": 9.1
   },
   {
    "section": 2,
@@ -208,8 +208,8 @@
    "step": null,
    "text": "In symbols: E equals minus delta V over delta x. The field strength is how fast V changes with distance: steep potential, strong field. The minus sign says E points toward decreasing V. In a uniform field, like between parallel plates, the potential difference is simply E times d. And that's why field strength can be quoted in volts per meter, the same unit as newtons per coulomb.",
    "src": "audio/717f84142e253621.mp3",
-   "start": 8.92,
-   "end": 35.11,
+   "start": 9.09,
+   "end": 35.31,
    "dur": 26.2
   },
   {
@@ -224,9 +224,9 @@
    "step": null,
    "text": "For a point charge, the potential follows from Coulomb's law, with one power of r fewer than the field. V equals k q over r. It's positive near a plus charge, negative near a minus charge, and zero far away. It falls as one over r, more slowly than the field's one over r squared. And it's a scalar with a sign. For several charges, you just add the numbers: no components, no arrows.",
    "src": "audio/717f84142e253621.mp3",
-   "start": 35.11,
+   "start": 35.31,
    "end": 61.82,
-   "dur": 26.7
+   "dur": 26.5
   },
   {
    "section": 3,
@@ -241,8 +241,8 @@
    "text": "Connect all the points with the same V, and you get equipotentials: the contour lines of the height map. Moving a charge along one takes no work, so the field can have no component along it. That means field lines cross equipotentials at right angles. And drawn at equal steps of V, the contours crowd together where the field is strong.",
    "src": "audio/287973859cab84e9.mp3",
    "start": 0,
-   "end": 22.01,
-   "dur": 22
+   "end": 22.62,
+   "dur": 22.6
   },
   {
    "section": 3,
@@ -253,9 +253,9 @@
    "step": null,
    "text": "Try the map. The grey curves are equipotentials, and the orange ones are field lines. Drag the small test charge to read V, and drag the charges around too. Notice the field arrow always crosses the grey curves at right angles, pointing toward lower V. Then switch to Plates, and look at how evenly the curves are spaced.",
    "src": "audio/287973859cab84e9.mp3",
-   "start": 22.01,
-   "end": 42.62,
-   "dur": 20.6
+   "start": 22.62,
+   "end": 44.21,
+   "dur": 21.6
   },
   {
    "section": 3,
@@ -268,9 +268,9 @@
    "step": null,
    "text": "Two important cases. Between parallel plates, the equipotentials are evenly spaced planes: V drops by the same amount every centimeter, which is what a uniform field means. And every conductor in equilibrium is an equipotential. No field inside means no slope, so the whole piece of metal sits at one potential. Wires in a circuit diagram are treated the same way, for a different reason: their resistance is negligible, so almost no voltage drops along them.",
    "src": "audio/287973859cab84e9.mp3",
-   "start": 42.62,
-   "end": 73.6,
-   "dur": 31
+   "start": 44.21,
+   "end": 74.04,
+   "dur": 29.8
   },
   {
    "section": 3,
@@ -283,9 +283,9 @@
    "step": null,
    "text": "Three classic mistakes. One: thinking that V equals zero means E equals zero. V is the height; E is the slope. Halfway between a plus and a minus charge, the height is zero, but the ground is steep. Two: adding potentials as vectors, or forgetting their signs. V is a signed scalar. And three: getting electron directions backward. Electrons go toward higher V.",
    "src": "audio/287973859cab84e9.mp3",
-   "start": 73.6,
+   "start": 74.04,
    "end": 102.65,
-   "dur": 29.1
+   "dur": 28.6
   },
   {
    "section": 4,
@@ -300,8 +300,8 @@
    "text": "Because the electric force is conservative, kinetic plus potential energy stays constant for a charge moving in an electrostatic field. Falling through a potential difference turns q V into kinetic energy, exactly like a dropped ball turns m g h into one half m v squared. That's how every particle accelerator, X-ray tube, and old TV tube works.",
    "src": "audio/cd4358ee5699cfd5.mp3",
    "start": 0,
-   "end": 22.63,
-   "dur": 22.6
+   "end": 22.98,
+   "dur": 23
   },
   {
    "section": 4,
@@ -314,9 +314,9 @@
    "step": null,
    "text": "So the kinetic energy gained equals the potential energy lost. Starting from rest, one half m v squared equals the size of q, times the size of delta V. An electron crossing a thousand volts toward higher V gains a thousand electron-volts. And the speed grows as the square root of the voltage: four times the voltage, twice the speed.",
    "src": "audio/cd4358ee5699cfd5.mp3",
-   "start": 22.63,
-   "end": 45.19,
-   "dur": 22.6
+   "start": 22.98,
+   "end": 45.42,
+   "dur": 22.4
   },
   {
    "section": 4,
@@ -327,9 +327,9 @@
    "step": null,
    "text": "Here a particle starts at rest at the left plate, and exits through a hole in the right one. At a thousand volts, an electron leaves at about nineteen million meters per second, six percent of the speed of light. Switch to the proton: it gets the same thousand electron-volts, but being eighteen hundred thirty-six times heavier, it ends up about forty-three times slower.",
    "src": "audio/cd4358ee5699cfd5.mp3",
-   "start": 45.19,
-   "end": 67.59,
-   "dur": 22.4
+   "start": 45.42,
+   "end": 67.74,
+   "dur": 22.3
   },
   {
    "section": 4,
@@ -342,9 +342,9 @@
    "step": null,
    "text": "Above a few tens of kilovolts, an electron gets close enough to the speed of light that one half m v squared stops being accurate; relativity takes over. But the energy statement, K equals e times delta V, stays exactly right. That's one reason physicists quote particle energies in electron-volts.",
    "src": "audio/cd4358ee5699cfd5.mp3",
-   "start": 67.59,
-   "end": 88.92,
-   "dur": 21.3
+   "start": 67.74,
+   "end": 90.51,
+   "dur": 22.8
   },
   {
    "section": 4,
@@ -355,9 +355,9 @@
    "step": null,
    "text": "That's electric potential. Try the checkpoint below, then on to capacitors.",
    "src": "audio/cd4358ee5699cfd5.mp3",
-   "start": 88.92,
+   "start": 90.51,
    "end": 95.26,
-   "dur": 6.3
+   "dur": 4.8
   }
  ]
 }

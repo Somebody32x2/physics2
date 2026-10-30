@@ -67,7 +67,9 @@ Clips are named by a hash of the whole request, so nothing is ever generated twi
 clips, and editing one section re-records only that section. One API call per section, because the free tier
 allows 10 requests a day; `--max N` caps a run. See the comment at the top of `tts/gen.mjs`. Blocks without a
 recording yet are read by the browser's own voice; a chapter is published (`audio/<id>.json`) only once all its clips
-exist. `tests/narration.test.js` checks every `at` still exists. How to write a script: `tts/WRITING.md`.
+exist. Block starts within a section clip come from word timestamps when Vosk is set up (`tts/align.py`; see
+`TTS_PY`/`VOSK_MODEL` in `tts/gen.mjs`), otherwise from pauses. To record a clip again (say, a defect you heard),
+list its hash in `tts/rerecord.json`. `tests/narration.test.js` checks every `at` still exists. How to write a script: `tts/WRITING.md`.
 
 ## Deploy
 

@@ -13,8 +13,8 @@
    "text": "So far, the charges sat still. Connect a battery across a wire, and they move. The battery sets up an electric field inside the conductor, and the free electrons respond. That flow of charge is current: the amount of charge passing a point, per second.",
    "src": "audio/86c98a7cf6b5ea60.mp3",
    "start": 0,
-   "end": 18.35,
-   "dur": 18.4
+   "end": 18.51,
+   "dur": 18.5
   },
   {
    "section": 0,
@@ -27,9 +27,9 @@
    "step": null,
    "text": "Two conventions trip people up here. First, current direction is defined as the way positive charge would move: out of the battery's plus terminal, around the circuit, and into its minus terminal. In a metal, the moving charges are electrons, so they actually go the other way. Circuit analysis doesn't care; just never mix the two in one problem. Second, the electrons move absurdly slowly, typically well under a millimeter per second. The light still comes on instantly, because the field travels through the wire at nearly light speed, and starts every electron in the circuit moving at once.",
    "src": "audio/86c98a7cf6b5ea60.mp3",
-   "start": 18.35,
-   "end": 53.55,
-   "dur": 35.2
+   "start": 18.51,
+   "end": 53.79,
+   "dur": 35.3
   },
   {
    "section": 0,
@@ -42,9 +42,9 @@
    "step": null,
    "text": "In symbols: I equals d Q by d t, the rate at which charge flows past a point. It's the same idea as gallons per minute in a pipe. One amp is one coulomb every second: about six times ten to the eighteen electrons.",
    "src": "audio/86c98a7cf6b5ea60.mp3",
-   "start": 53.55,
+   "start": 53.79,
    "end": 69.34,
-   "dur": 15.8
+   "dur": 15.6
   },
   {
    "section": 1,
@@ -56,8 +56,8 @@
    "text": "Here's the inside of a copper wire. Blue dots are free electrons, and grey rings are the fixed copper ions. The electrons jiggle fast in random directions, and drift slowly to the left. With a tenth of a volt across a meter and a half of wire, about six amps flow, but the drift speed is only about three tenths of a millimeter per second. An electron would take well over an hour to cross the wire! Try widening it: the current grows, but the drift speed doesn't. There are just more lanes.",
    "src": "audio/734652d4591f56f1.mp3",
    "start": 0,
-   "end": 31.58,
-   "dur": 31.6
+   "end": 31.92,
+   "dur": 31.9
   },
   {
    "section": 1,
@@ -70,9 +70,9 @@
    "step": null,
    "text": "So why do the electrons drift, instead of accelerating forever? They keep colliding with the vibrating ions of the metal, which turns their kinetic energy into heat. The net effect is a steady drift speed proportional to the field, and a current proportional to the voltage. The ratio is the resistance.",
    "src": "audio/734652d4591f56f1.mp3",
-   "start": 31.58,
-   "end": 50.17,
-   "dur": 18.6
+   "start": 31.92,
+   "end": 50.37,
+   "dur": 18.4
   },
   {
    "section": 1,
@@ -85,9 +85,9 @@
    "step": null,
    "text": "That's Ohm's law: V equals I times R. The voltage across a resistor equals the current times the resistance. And for a plain wire, R equals rho L over A, just as you'd guess for water in a pipe: longer is harder, wider is easier. Rho, the resistivity, is set by the material: about one point seven times ten to the minus eight ohm meters for copper.",
    "src": "audio/734652d4591f56f1.mp3",
-   "start": 50.17,
-   "end": 77.58,
-   "dur": 27.4
+   "start": 50.37,
+   "end": 77.94,
+   "dur": 27.6
   },
   {
    "section": 1,
@@ -98,9 +98,9 @@
    "step": null,
    "text": "On this graph of current against voltage, an ohmic resistor gives a straight line, with slope one over R. So the ten ohm line is twice as steep as the twenty ohm line. A light bulb filament is not ohmic. It heats up as the current grows, its resistance rises, and its curve bends over.",
    "src": "audio/734652d4591f56f1.mp3",
-   "start": 77.58,
+   "start": 77.94,
    "end": 98.33,
-   "dur": 20.8
+   "dur": 20.4
   },
   {
    "section": 2,
@@ -114,8 +114,8 @@
    "text": "Resistors turn electrical energy into heat, or light, in a bulb. Each coulomb that drops through a potential difference V gives up V joules, and I coulombs pass every second. So the power is I times V.",
    "src": "audio/759150372a8a0e7a.mp3",
    "start": 0,
-   "end": 15.54,
-   "dur": 15.5
+   "end": 16.02,
+   "dur": 16
   },
   {
    "section": 2,
@@ -128,9 +128,9 @@
    "step": null,
    "text": "Using Ohm's law, you can write that three ways: I V, I squared R, or V squared over R. Use the version whose inputs you know. At the same current, a bigger resistor gets more power. At the same voltage, a smaller resistor gets more power. That's why a hundred watt bulb has less resistance than a sixty watt one.",
    "src": "audio/759150372a8a0e7a.mp3",
-   "start": 15.54,
-   "end": 38.73,
-   "dur": 23.2
+   "start": 16.02,
+   "end": 39.33,
+   "dur": 23.3
   },
   {
    "section": 2,
@@ -143,9 +143,9 @@
    "step": null,
    "text": "A battery's job is the opposite of a resistor's. Its emf, short for the old name \"electromotive force\", is really a voltage, not a force. It's the energy per coulomb the battery gives to charge pushed from its minus terminal to its plus terminal. Think of it as a pump lifting water up a hill, with resistors as the paddle wheels the water turns on the way back down. Real batteries also have a small internal resistance, so under load, the voltage at their terminals is a bit less than the emf.",
    "src": "audio/759150372a8a0e7a.mp3",
-   "start": 38.73,
+   "start": 39.33,
    "end": 70.78,
-   "dur": 32.1
+   "dur": 31.5
   },
   {
    "section": 3,
@@ -157,8 +157,8 @@
    "text": "Let's walk a test charge once around a loop: a twelve volt battery, with a four ohm and a two ohm resistor. Start at point a, the battery's minus terminal, and call its potential zero volts.",
    "src": "audio/b784ac19a385c6a2.mp3",
    "start": 0,
-   "end": 13.48,
-   "dur": 13.5
+   "end": 13.77,
+   "dur": 13.8
   },
   {
    "section": 3,
@@ -169,9 +169,9 @@
    "step": 1,
    "text": "Through the battery, from minus to plus, the potential rises by the emf: twelve volts. The battery is the pump. It uses chemical energy to lift charge to a higher potential.",
    "src": "audio/b784ac19a385c6a2.mp3",
-   "start": 13.48,
-   "end": 26.55,
-   "dur": 13.1
+   "start": 13.77,
+   "end": 26.97,
+   "dur": 13.2
   },
   {
    "section": 3,
@@ -182,8 +182,8 @@
    "step": 2,
    "text": "The wire is flat, because ideal wires have no resistance. Then, across the first resistor, the potential drops by I times R one: two amps times four ohms, eight volts. The charge gives up that energy as heat.",
    "src": "audio/b784ac19a385c6a2.mp3",
-   "start": 26.55,
-   "end": 42.89,
+   "start": 26.97,
+   "end": 43.23,
    "dur": 16.3
   },
   {
@@ -195,9 +195,9 @@
    "step": 3,
    "text": "Across the second resistor, it drops another four volts, all the way down to zero.",
    "src": "audio/b784ac19a385c6a2.mp3",
-   "start": 42.89,
+   "start": 43.23,
    "end": 49.39,
-   "dur": 6.5
+   "dur": 6.2
   },
   {
    "section": 3,
@@ -209,8 +209,8 @@
    "text": "Back at a: plus twelve, minus eight, minus four, equals zero. Every rise is paid back by drops. And that's what fixes the current: the emf divided by the total resistance, twelve over six, two amps.",
    "src": "audio/b784ac19a385c6a2.mp3",
    "start": 49.39,
-   "end": 65.2,
-   "dur": 15.8
+   "end": 66.57,
+   "dur": 17.2
   },
   {
    "section": 3,
@@ -223,9 +223,9 @@
    "step": null,
    "text": "So here's the water picture. Voltage is height, current is flow rate, and resistance is how narrow the pipe is. The battery lifts charge up by the emf, every resistor lets it fall, and the total fall around any loop equals the lift. And current isn't \"used up\" in a resistor: the same current comes out as went in. What gets used up is potential energy.",
    "src": "audio/b784ac19a385c6a2.mp3",
-   "start": 65.2,
-   "end": 94.05,
-   "dur": 28.8
+   "start": 66.57,
+   "end": 94.32,
+   "dur": 27.8
   },
   {
    "section": 3,
@@ -238,8 +238,8 @@
    "step": null,
    "text": "A classic mistake: thinking a battery supplies a fixed current. A battery supplies a nearly fixed voltage, and the current depends on what you connect. Short it with a wire, and the current is huge. Connect a big resistor, and it's tiny.",
    "src": "audio/b784ac19a385c6a2.mp3",
-   "start": 94.05,
-   "end": 110.01,
+   "start": 94.32,
+   "end": 110.28,
    "dur": 16
   },
   {
@@ -251,9 +251,9 @@
    "step": null,
    "text": "That's current and resistance. Try the checkpoint below, then on to D C circuits.",
    "src": "audio/b784ac19a385c6a2.mp3",
-   "start": 110.01,
+   "start": 110.28,
    "end": 116.3,
-   "dur": 6.3
+   "dur": 6
   }
  ]
 }

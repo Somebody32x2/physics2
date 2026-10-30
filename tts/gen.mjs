@@ -58,6 +58,9 @@ const clipName = (body) => sha(JSON.stringify({ body, ENCODING }));
 /** Text for the browser's own voice when a clip is missing: no inline tags, no shouted emphasis. */
 const plain = (say) => say.replace(/<[^>]+>/g, ' ').replace(/\b[A-Z]{3,}\b/g, (w) => w.toLowerCase()).replace(/\s+/g, ' ').trim();
 
+/** Clip names (hashes) to record again, e.g. a legacy clip with an audible defect. */
+const rerecord = existsSync(join(ROOT, 'tts', 'rerecord.json')) ? JSON.parse(readFileSync(join(ROOT, 'tts', 'rerecord.json'), 'utf8')).map((r) => r.clip) : [];
+
 async function loadChapters() {
   // Chapter order, from the imports in src/lessons/index.js; a script is named after its lesson file.
   const order = [...readFileSync(join(ROOT, 'src', 'lessons', 'index.js'), 'utf8').matchAll(/^import \w+ from '\.\/([\w-]+)\.js'/gm)].map((m) => m[1]);
@@ -83,9 +86,14 @@ async function loadChapters() {
       const n = sec.perBlock ?? 0;
       const groups = [...items.slice(0, n).map((it) => [it]), items.slice(n)].filter((g) => g.length);
       for (const g of groups) {
-        // Between blocks of one clip, a short pause marks the boundary the cue snapping looks for.
-        const say = (it, k) => (k < g.length - 1 ? `${it.block.say} <short pause>` : it.block.say);
-        const body = request(sec.voice, g.map((it, k) => ({ say: say(it, k), style: it.style })));
+        // Clips recorded before 2026-10-30 put "<short pause>" after every block but the last, as a boundary
+        // marker; Gemini sometimes read it aloud at the end of a text item. Boundaries now come from word
+        // timestamps, so new clips have no marker. A legacy clip keeps being used (no re-recording) unless its
+        // name is listed in tts/rerecord.json.
+        const items = (sep) => g.map((it, k) => ({ say: sep && k < g.length - 1 ? `${it.block.say} <short pause>` : it.block.say, style: it.style }));
+        const legacy = request(sec.voice, items(true));
+        const keepLegacy = existsSync(join(AUDIO, `${clipName(legacy)}.mp3`)) && !rerecord.includes(clipName(legacy));
+        const body = keepLegacy ? legacy : request(sec.voice, items(false));
         const clip = { id, section: s, voice: sec.voice, body, name: clipName(body), blocks: g.map((it) => it.block) };
         g.forEach((it) => (it.block.clip = clip));
         clips.push(clip);
@@ -144,16 +152,36 @@ function pauses(mp3) {
 }
 
 /**
- * [start, end] of each block in a clip. Each boundary is estimated from the previous one at the clip's average
- * speaking rate (so errors do not accumulate), then snapped to the longest nearby pause: the <short pause> put
- * between blocks is usually the longest silence around.
+ * Word timestamps from offline speech recognition (tts/align.py, Vosk), cached next to the raw audio. Null when
+ * Vosk is not set up: TTS_PY (a python with vosk) and VOSK_MODEL default to the ~/tts-lab install.
  */
-function cues(mp3, weights) {
+const ALIGN_PY = process.env.TTS_PY ?? join(homedir(), 'tts-lab', 'venv', 'bin', 'python');
+const ALIGN_MODEL = process.env.VOSK_MODEL ?? join(homedir(), 'tts-lab', 'models', 'vosk-model-small-en-us-0.15');
+const canAlign = existsSync(ALIGN_PY) && existsSync(ALIGN_MODEL);
+function words(mp3) {
+  if (!canAlign) return null;
+  const cache = join(RAW, `${mp3.split('/').pop().replace(/\.mp3$/, '')}.words.json`);
+  if (!existsSync(cache)) writeFileSync(cache, execFileSync(ALIGN_PY, ['-I', join(ROOT, 'tts', 'align.py'), mp3, ALIGN_MODEL]));
+  return JSON.parse(readFileSync(cache, 'utf8'));
+}
+
+const tokens = (text) => text.toLowerCase().replace(/[^a-z' ]+/g, ' ').split(/\s+/).filter(Boolean);
+const same = (a, b) => a === b || (a.length >= 4 && b.length >= 4 && a.slice(0, 3) === b.slice(0, 3));
+
+/**
+ * [start, end] of each block in a clip. Each boundary is estimated from the previous one at the clip's average
+ * speaking rate (so errors do not accumulate) and snapped to the longest nearby pause: the <short pause> put
+ * between blocks is usually the longest silence around. Then, when word timestamps are available, it moves to
+ * just before the block's first words as recognized, which also catches blocks Gemini ran together.
+ */
+function cues(mp3, texts) {
   const dur = duration(mp3);
   const r = (x) => Math.round(x * 100) / 100;
-  if (weights.length === 1) return [[0, r(dur)]];
+  if (texts.length === 1) return [[0, r(dur)]];
+  const weights = texts.map((t) => t.length);
   const rate = weights.reduce((a, b) => a + b, 0) / dur; // characters per second
   const found = pauses(mp3);
+  const heard = words(mp3);
   const starts = [0];
   for (let k = 1; k < weights.length; k++) {
     const len = weights[k - 1] / rate; // expected length of the previous block
@@ -161,7 +189,21 @@ function cues(mp3, weights) {
     const win = Math.max(2.5, 0.35 * len);
     const score = (p) => p.len - (0.6 * Math.abs(p.t - est)) / win;
     const best = found.filter((p) => Math.abs(p.t - est) <= win && p.t > starts.at(-1) + 0.5 * len).sort((a, b) => score(b) - score(a))[0];
-    starts.push(best ? best.t : est);
+    let t = best ? best.t : est;
+    if (heard) {
+      // Where the block's first words are heard: at least 2 of its first 3 words in order, near the estimate.
+      const want = tokens(texts[k]).slice(0, 3);
+      const hits = heard
+        .map((w, i) => ({ i, n: want.filter((x, j) => heard[i + j] && same(heard[i + j].w, x)).length }))
+        .filter(({ i, n }) => n >= 2 && Math.abs(heard[i].s - t) <= 8 && heard[i].s > starts.at(-1) + 0.5 * len)
+        .sort((a, b) => b.n - a.n || Math.abs(heard[a.i].s - t) - Math.abs(heard[b.i].s - t));
+      if (hits.length) {
+        const i = hits[0].i;
+        const gap = i > 0 ? heard[i].s - heard[i - 1].e : 0.6;
+        t = heard[i].s - Math.min(0.3, Math.max(0, gap) / 2);
+      }
+    }
+    starts.push(t);
   }
   return starts.map((t, k) => [r(t), r(starts[k + 1] ?? dur)]);
 }
@@ -219,7 +261,7 @@ async function main() {
       const timing = new Map(); // clip name -> [[start, end] per block], null when the clip is missing
       for (const c of ch.clips) {
         const mp3 = join(AUDIO, `${c.name}.mp3`);
-        timing.set(c.name, existsSync(mp3) ? cues(mp3, c.blocks.map((b) => plain(b.say).length)) : null);
+        timing.set(c.name, existsSync(mp3) ? cues(mp3, c.blocks.map((b) => plain(b.say))) : null);
       }
       const blocks = ch.blocks.map((b) => {
         const t = timing.get(b.clip.name)?.[b.clip.blocks.indexOf(b)];
