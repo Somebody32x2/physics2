@@ -1,0 +1,274 @@
+{
+ "chapter": "magnetic-sources",
+ "blocks": [
+  {
+   "section": 0,
+   "voice": "Achird",
+   "at": [
+    "The last chapter took B as given"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "The last chapter took B as given. Here's where it comes from: moving charges. Every current makes a magnetic field, and almost every magnetic field in this course is made by currents. Even in a permanent magnet, the \"currents\" are electrons spinning and orbiting inside the atoms, all lined up. The one exception, a changing electric field, comes up in the electromagnetic waves chapter.",
+   "src": "audio/3624f0b944d1ccda.mp3",
+   "start": 0,
+   "end": 25.59,
+   "dur": 25.6
+  },
+  {
+   "section": 0,
+   "voice": "Achird",
+   "at": [
+    "So moving charges both"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "So moving charges both make magnetic fields and feel them, the same way static charges make and feel electric fields. The simplest source is a long straight wire, and its field lines are circles around the wire. For the direction, grip the wire with your right hand, thumb along the current. Your fingers curl the way B goes. That's the right-hand grip rule.",
+   "src": "audio/3624f0b944d1ccda.mp3",
+   "start": 25.59,
+   "end": 50.7,
+   "dur": 25.1
+  },
+  {
+   "section": 0,
+   "voice": "Achird",
+   "at": [
+    "perpendicular distance from the wire"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "The field strength is mu naught I, over two pi r. It's proportional to the current, and falls off as one over r: twice as far, half the field. That's slower than a point charge's one over r squared, because a wire is spread out. Mu naught is the magnetic constant, four pi times ten to the minus seven.",
+   "src": "audio/3624f0b944d1ccda.mp3",
+   "start": 50.7,
+   "end": 72.45,
+   "dur": 21.8
+  },
+  {
+   "section": 0,
+   "voice": "Achird",
+   "at": [
+    "For a sense of scale"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "For a sense of scale: ten amps, two centimeters away, makes about a hundred microtesla. That's about twice Earth's field, enough to swing a compass held right next to a single wire. A power cord barely affects a compass, because its two conductors carry equal and opposite currents. It's also why real electromagnets use many turns of wire.",
+   "src": "audio/3624f0b944d1ccda.mp3",
+   "start": 72.45,
+   "end": 96.74,
+   "dur": 24.3
+  },
+  {
+   "section": 1,
+   "voice": "Charon",
+   "at": [],
+   "sel": null,
+   "figure": "Sandbox: wires through the page",
+   "step": null,
+   "text": "Play with some wires running through the page. Drag a wire to move it, and click one to reverse its current. The purple lines are field lines, crowding where the field is strong, and the compass needles point along B. Try two wires with opposite currents, then the same current, and compare the patterns between them.",
+   "src": "audio/d20bb1684601331b.mp3",
+   "start": 0,
+   "end": 20.04,
+   "dur": 20
+  },
+  {
+   "section": 1,
+   "voice": "Charon",
+   "at": [
+    "Currents make B, and B lines never end"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "Notice something about those lines. Electric field lines start on plus charges and end on minus charges. Magnetic field lines have NO ends. They always close on themselves, because there are no magnetic \"charges\", no monopoles. Cut a bar magnet in half, and you just get two smaller magnets, each with a north and a south.",
+   "src": "audio/d20bb1684601331b.mp3",
+   "start": 20.04,
+   "end": 41.98,
+   "dur": 21.9
+  },
+  {
+   "section": 2,
+   "voice": "Achird",
+   "at": [
+    "chop the wire into tiny pieces"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "For any other shape of wire, the rule is the Biot-Savart law. Chop the wire into tiny pieces. Each piece of current makes a little field, and you add up the contributions from every piece: the magnetic version of superposition. For a circular loop, it gives mu naught I over two R at the center. The next figure computes its field lines exactly that way.",
+   "src": "audio/03a1c62ed7ffad14.mp3",
+   "start": 0,
+   "end": 22.95,
+   "dur": 23
+  },
+  {
+   "section": 2,
+   "voice": "Achird",
+   "at": [],
+   "sel": null,
+   "figure": "From one loop to a solenoid",
+   "step": 0,
+   "text": "Here's one loop of wire, seen edge-on. Current comes out of the page at the top, and goes in at the bottom. Near each crossing, the field circles the wire. Through the middle of the loop, all those circles point the same way: to the right. And far away, the pattern is a dipole, the same shape as a bar magnet's.",
+   "src": "audio/03a1c62ed7ffad14.mp3",
+   "start": 22.95,
+   "end": 41.97,
+   "dur": 19
+  },
+  {
+   "section": 2,
+   "voice": "Achird",
+   "at": [],
+   "sel": null,
+   "figure": "From one loop to a solenoid",
+   "step": 1,
+   "text": "Two loops with the same current. Their fields add up inside, where they point the same way, and partly cancel in the gap outside.",
+   "src": "audio/03a1c62ed7ffad14.mp3",
+   "start": 41.97,
+   "end": 49.8,
+   "dur": 7.8
+  },
+  {
+   "section": 2,
+   "voice": "Achird",
+   "at": [],
+   "sel": null,
+   "figure": "From one loop to a solenoid",
+   "step": 2,
+   "text": "Four loops. The field inside is getting straighter and more even. The lines now enter at the left end and leave at the right, like a stubby magnet.",
+   "src": "audio/03a1c62ed7ffad14.mp3",
+   "start": 49.8,
+   "end": 61.44,
+   "dur": 11.6
+  },
+  {
+   "section": 2,
+   "voice": "Achird",
+   "at": [],
+   "sel": null,
+   "figure": "From one loop to a solenoid",
+   "step": 3,
+   "text": "Eight closely spaced loops make a solenoid. Inside, the lines are nearly parallel and evenly spaced: a uniform field. Outside, the same lines spread over a huge area, so the field there is weak.",
+   "src": "audio/03a1c62ed7ffad14.mp3",
+   "start": 61.44,
+   "end": 76.47,
+   "dur": 15
+  },
+  {
+   "section": 2,
+   "voice": "Achird",
+   "at": [],
+   "sel": null,
+   "figure": "From one loop to a solenoid",
+   "step": 4,
+   "text": "A long, tightly wound solenoid behaves like a bar magnet: lines come out of one end, north, and go back in at the other, south. But unlike a magnet, you can switch it off, reverse it, and set its strength with the current. That's an electromagnet. And every line is a closed loop.",
+   "src": "audio/03a1c62ed7ffad14.mp3",
+   "start": 76.47,
+   "end": 97.02,
+   "dur": 20.5
+  },
+  {
+   "section": 2,
+   "voice": "Achird",
+   "at": [
+    "turns per meter of length"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "Inside a long solenoid, B equals mu naught n I. The field is uniform, the same everywhere inside, and it depends only on the current and n, the number of turns per meter. Not the total number of turns. Outside, the field is nearly zero.",
+   "src": "audio/03a1c62ed7ffad14.mp3",
+   "start": 97.02,
+   "end": 116.26,
+   "dur": 19.2
+  },
+  {
+   "section": 3,
+   "voice": "Charon",
+   "at": [
+    "plays the role for B that"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "For the wire and the solenoid there's a shortcut. Ampere's law plays the role for B that Gauss's law played for E. Draw any closed loop, and walk around it, adding up the part of B along your path. The total equals mu naught, times the current poking through the loop.",
+   "src": "audio/27ee7c9e57c8ef19.mp3",
+   "start": 0,
+   "end": 20.82,
+   "dur": 20.8
+  },
+  {
+   "section": 3,
+   "voice": "Charon",
+   "at": [
+    "net current passing through the path"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "Currents outside the path don't count, and currents through it in opposite directions cancel. With a symmetric path, like a circle around a wire, or a rectangle through a solenoid, it hands you B directly.",
+   "src": "audio/27ee7c9e57c8ef19.mp3",
+   "start": 20.82,
+   "end": 34.71,
+   "dur": 13.9
+  },
+  {
+   "section": 3,
+   "voice": "Charon",
+   "at": [
+    "two wires push on each other"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "Since currents make fields, and currents feel fields, two wires push on each other. Wire one's field at wire two is mu naught I one over two pi d. Wire two feels a force from it, so the force per meter is mu naught, times I one, times I two, over two pi d.",
+   "src": "audio/27ee7c9e57c8ef19.mp3",
+   "start": 34.71,
+   "end": 56.48,
+   "dur": 21.8
+  },
+  {
+   "section": 3,
+   "voice": "Charon",
+   "at": [],
+   "sel": null,
+   "figure": "Two parallel wires",
+   "step": null,
+   "text": "Here are two wires a centimeter apart, each carrying ten amps. With currents in the same direction, they attract, with about two thousandths of a newton per meter. Switch wire two to the opposite direction, and they repel. The opposite of what you'd guess from like charges.",
+   "src": "audio/27ee7c9e57c8ef19.mp3",
+   "start": 56.48,
+   "end": 75.35,
+   "dur": 18.9
+  },
+  {
+   "section": 3,
+   "voice": "Charon",
+   "at": [
+    "Classic mistakes"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "Four classic mistakes. One: using one over r squared for a wire's field; for a long wire, it's one over r. Two: drawing B pointing toward or away from the wire; it circles it. Three: using the total number of turns in mu naught n I, instead of turns per meter. And four: expecting parallel currents to repel like charges do. They attract.",
+   "src": "audio/27ee7c9e57c8ef19.mp3",
+   "start": 75.35,
+   "end": 102.24,
+   "dur": 26.9
+  },
+  {
+   "section": 3,
+   "voice": "Charon",
+   "at": [],
+   "sel": ".quiz",
+   "figure": null,
+   "step": null,
+   "text": "That's where magnetic fields come from. Try the checkpoint below, then on to induction.",
+   "src": "audio/27ee7c9e57c8ef19.mp3",
+   "start": 102.24,
+   "end": 108.29,
+   "dur": 6.1
+  }
+ ]
+}

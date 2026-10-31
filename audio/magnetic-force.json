@@ -1,0 +1,287 @@
+{
+ "chapter": "magnetic-force",
+ "blocks": [
+  {
+   "section": 0,
+   "voice": "Achird",
+   "at": [
+    "Electric fields push on charges whether they move or not"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "Electric fields push on charges whether they move or not. A magnetic field, B, is pickier. It only pushes on charges that are moving, and it pushes sideways, perpendicular to the motion. Its unit is the tesla. A fridge magnet is about a hundredth of a tesla near its surface. Earth's field is about five times ten to the minus five tesla. And an M R I magnet is one and a half to three tesla.",
+   "src": "audio/251b09644390b63e.mp3",
+   "start": 0,
+   "end": 28.98,
+   "dur": 29
+  },
+  {
+   "section": 0,
+   "voice": "Achird",
+   "at": [
+    "Most of the pictures in this unit are flat"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "Most pictures in this unit are flat, but magnetic forces are fully three-dimensional. So we need a way to draw arrows pointing into or out of the page. The convention: a circle with an X is an arrow's tail feathers, seen as it flies away from you. That means into the page. A circle with a dot is the arrow's tip, coming at you. That means out of the page.",
+   "src": "audio/251b09644390b63e.mp3",
+   "start": 28.98,
+   "end": 52.95,
+   "dur": 24
+  },
+  {
+   "section": 0,
+   "voice": "Achird",
+   "at": [
+    "is a cross product. You met cross products"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "The force on a charge q moving with velocity v is a cross product. You met cross products for torque in Physics One: the result is perpendicular to both inputs, and its size depends on the sine of the angle between them.",
+   "src": "audio/251b09644390b63e.mp3",
+   "start": 52.95,
+   "end": 67.41,
+   "dur": 14.5
+  },
+  {
+   "section": 0,
+   "voice": "Achird",
+   "at": [
+    "angle between v and B"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "So F equals q, v cross B. Its size is the size of q, times v, times B, times the sine of theta, the angle between v and B. The force is perpendicular to both v and B. It's biggest when v is perpendicular to B, zero when the charge moves along B, and it reverses if q, v, or B reverses. And doubling the speed doubles the force.",
+   "src": "audio/251b09644390b63e.mp3",
+   "start": 67.41,
+   "end": 99.05,
+   "dur": 31.6
+  },
+  {
+   "section": 1,
+   "voice": "Charon",
+   "at": [],
+   "sel": null,
+   "figure": "The right-hand rule, case by case",
+   "step": 0,
+   "text": "Let's take the right-hand rule case by case. A positive charge moves right, through a field pointing into the page. Right hand: fingers along v, curl them toward B, and your thumb points along F. Here, F points up: perpendicular to both v and B, at full strength because v is perpendicular to B.",
+   "src": "audio/9315032f3f80d93e.mp3",
+   "start": 0,
+   "end": 24.81,
+   "dur": 24.8
+  },
+  {
+   "section": 1,
+   "voice": "Charon",
+   "at": [],
+   "sel": null,
+   "figure": "The right-hand rule, case by case",
+   "step": 1,
+   "text": "Same charge, now moving up. The force turns with the velocity, and now points left. It's always ninety degrees from v, which is why it can bend the path, but never speed the charge up.",
+   "src": "audio/9315032f3f80d93e.mp3",
+   "start": 24.81,
+   "end": 39.96,
+   "dur": 15.2
+  },
+  {
+   "section": 1,
+   "voice": "Charon",
+   "at": [],
+   "sel": null,
+   "figure": "The right-hand rule, case by case",
+   "step": 2,
+   "text": "Now swap in an electron. Use the same right hand, then flip the answer: the force now points right. Forgetting this flip is the most common sign error in the chapter.",
+   "src": "audio/9315032f3f80d93e.mp3",
+   "start": 39.96,
+   "end": 52.08,
+   "dur": 12.1
+  },
+  {
+   "section": 1,
+   "voice": "Charon",
+   "at": [],
+   "sel": null,
+   "figure": "The right-hand rule, case by case",
+   "step": 3,
+   "text": "Positive charge moving right, with the field now pointing out of the page. Reversing B reverses F, so it points down.",
+   "src": "audio/9315032f3f80d93e.mp3",
+   "start": 52.08,
+   "end": 60.41,
+   "dur": 8.3
+  },
+  {
+   "section": 1,
+   "voice": "Charon",
+   "at": [],
+   "sel": null,
+   "figure": "The right-hand rule, case by case",
+   "step": 4,
+   "text": "Now the field lies in the page, pointing right, and v points right too. V is parallel to B, the sine of zero is zero, so the force is zero. A charge moving along a field line feels nothing.",
+   "src": "audio/9315032f3f80d93e.mp3",
+   "start": 60.41,
+   "end": 77.25,
+   "dur": 16.8
+  },
+  {
+   "section": 1,
+   "voice": "Charon",
+   "at": [],
+   "sel": null,
+   "figure": "The right-hand rule, case by case",
+   "step": 5,
+   "text": "Tilt v to thirty degrees from B. Only the part of v perpendicular to B counts, so the force is half the maximum, since the sine of thirty degrees is one half. Both v and B lie in the page, so F sticks straight into the page.",
+   "src": "audio/9315032f3f80d93e.mp3",
+   "start": 77.25,
+   "end": 95.64,
+   "dur": 18.4
+  },
+  {
+   "section": 1,
+   "voice": "Charon",
+   "at": [],
+   "sel": null,
+   "figure": "The right-hand rule, case by case",
+   "step": 6,
+   "text": "At ninety degrees, the force is back to full size, still into the page. Whenever v and B both lie in the page, F has to point straight into or out of it.",
+   "src": "audio/9315032f3f80d93e.mp3",
+   "start": 95.64,
+   "end": 106.7,
+   "dur": 11.1
+  },
+  {
+   "section": 2,
+   "voice": "Achird",
+   "at": [
+    "Sideways force, no work"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "Here's a big consequence. Because the force is always perpendicular to v, a magnetic field never does work on a charge. It can't speed a charge up, or slow it down. It can only turn it. And a constant speed, with a constant-size sideways force, is exactly uniform circular motion from Physics One.",
+   "src": "audio/cc25dfa7493b650f.mp3",
+   "start": 0,
+   "end": 22.35,
+   "dur": 22.4
+  },
+  {
+   "section": 2,
+   "voice": "Achird",
+   "at": [
+    "Set the magnetic force equal to the centripetal force",
+    "radius of the circle"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "Set the magnetic force equal to the centripetal force, and you get the radius: r equals m v over q B. A heavier or faster particle swings wider; a stronger field or a bigger charge curls it tighter. The time for one full circle is two pi m over q B. Notice the speed cancels out: faster particles go around bigger circles, in exactly the same time.",
+   "src": "audio/cc25dfa7493b650f.mp3",
+   "start": 22.35,
+   "end": 49.14,
+   "dur": 26.8
+  },
+  {
+   "section": 2,
+   "voice": "Achird",
+   "at": [],
+   "sel": null,
+   "figure": "Sandbox: a charge enters a magnetic field",
+   "step": null,
+   "text": "Here, an ion with charge e enters the field from the left. At two times ten to the five meters per second in one tesla, a one u ion curls around in a circle about two millimeters in radius, taking about thirty-three nanoseconds to come back out. Try doubling v: the circle doubles, but the time stays the same. Then try heavier masses: they land farther away. That's how a mass spectrometer sorts ions.",
+   "src": "audio/cc25dfa7493b650f.mp3",
+   "start": 49.14,
+   "end": 77.04,
+   "dur": 27.9
+  },
+  {
+   "section": 2,
+   "voice": "Achird",
+   "at": [
+    "If v has a component"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "If v also has a part along B, that part feels no force, and just carries on, while the perpendicular part goes around in a circle. The result is a helix, wrapped around the field lines. That's how Earth's field steers charged particles from the Sun toward the poles, where they make the aurora.",
+   "src": "audio/cc25dfa7493b650f.mp3",
+   "start": 77.04,
+   "end": 95.78,
+   "dur": 18.7
+  },
+  {
+   "section": 3,
+   "voice": "Charon",
+   "at": [
+    "A current is just many moving charges",
+    "length of wire in the field"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "A current is just many moving charges, so a wire carrying current through a field feels the sum of all their sideways pushes. F equals I, L cross B. It's the same rule as for one charge, with q v replaced by I L. The force is perpendicular to the wire and to B, and zero for a wire lying along B.",
+   "src": "audio/bb5dbe2b994f8e55.mp3",
+   "start": 0,
+   "end": 21.12,
+   "dur": 21.1
+  },
+  {
+   "section": 3,
+   "voice": "Charon",
+   "at": [
+    "Put a rectangular loop in a field"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "Put a rectangular loop in a field, and the forces on its two long sides point opposite ways. They don't move the loop anywhere, but they twist it. The torque is N I A B, times the sine of theta: N turns, current I, area A, and theta, the angle between B and the loop's normal. That twist is an electric motor.",
+   "src": "audio/bb5dbe2b994f8e55.mp3",
+   "start": 21.12,
+   "end": 41.76,
+   "dur": 20.6
+  },
+  {
+   "section": 3,
+   "voice": "Charon",
+   "at": [],
+   "sel": null,
+   "figure": "Force on a current: wire and motor",
+   "step": null,
+   "text": "Try it here. Two amps through twenty centimeters of wire, in a field of six tenths of a tesla, feel a force of about a quarter of a newton. Reverse the current with the slider, and the force flips. Then switch to the motor loop, and watch the twist keep it turning.",
+   "src": "audio/bb5dbe2b994f8e55.mp3",
+   "start": 41.76,
+   "end": 57.36,
+   "dur": 15.6
+  },
+  {
+   "section": 3,
+   "voice": "Charon",
+   "at": [
+    "Classic mistakes"
+   ],
+   "sel": null,
+   "figure": null,
+   "step": null,
+   "text": "Three classic mistakes. One: using the right-hand rule for an electron and forgetting to flip the answer. Two: drawing the force along B, the way you would for an electric field. Magnetic forces are always perpendicular to B. And three: thinking a magnetic field can change a particle's speed. It only ever changes the direction.",
+   "src": "audio/bb5dbe2b994f8e55.mp3",
+   "start": 57.36,
+   "end": 80.94,
+   "dur": 23.6
+  },
+  {
+   "section": 3,
+   "voice": "Charon",
+   "at": [],
+   "sel": ".quiz",
+   "figure": null,
+   "step": null,
+   "text": "That's the magnetic force. Try the checkpoint below, then on to where magnetic fields come from.",
+   "src": "audio/bb5dbe2b994f8e55.mp3",
+   "start": 80.94,
+   "end": 87.34,
+   "dur": 6.4
+  }
+ ]
+}

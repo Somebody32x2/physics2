@@ -1,6 +1,7 @@
 [
-  { "clip": "6d49f68402355165", "why": "magnetic-force section 1: Gemini spoke the <short pause> boundary marker" },
-  { "clip": "ce7559eeee660a45", "why": "magnetic-force section 2: spoken boundary marker" },
-  { "clip": "1a076da423e4ab42", "why": "magnetic-force section 3: spoken boundary marker" },
-  { "clip": "8ba3162b31db1a83", "why": "magnetic-sources section 4: spoken boundary marker" }
+  { "clip": "6d49f68402355165", "why": "magnetic-force section 1: Gemini spoke the <short pause> boundary marker (done 2026-10-30)" },
+  { "clip": "ce7559eeee660a45", "why": "magnetic-force section 2: spoken boundary marker (done)" },
+  { "clip": "1a076da423e4ab42", "why": "magnetic-force section 3: spoken boundary marker (done)" },
+  { "clip": "8ba3162b31db1a83", "why": "magnetic-sources section 4: spoken boundary marker (done)" },
+  { "clip": "04547218be79d790", "why": "magnetic-force section 4: spoken boundary marker" }
 ]

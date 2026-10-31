@@ -68,11 +68,11 @@ export default {
       blocks: [
         {
           at: 'Sideways force, no work',
-          say: `Here's a big consequence. Because the force is always perpendicular to v, a magnetic field NEVER does work on a charge. It can't speed a charge up, or slow it down. It can only turn it. <short pause> And a constant speed, with a constant-size sideways force, is exactly uniform circular motion from Physics One.`,
+          say: `Here's a big consequence. Because the force is always perpendicular to v, a magnetic field NEVER does work on a charge. It can't speed a charge up, or slow it down. It can only turn it. And a constant speed, with a constant-size sideways force, is exactly uniform circular motion from Physics One.`,
         },
         {
           at: ['Set the magnetic force equal to the centripetal force', 'radius of the circle'],
-          say: `Set the magnetic force equal to the centripetal force, and you get the radius: r equals m v over q B. A heavier or faster particle swings wider; a stronger field or a bigger charge curls it tighter. The time for one full circle is two pi m over q B. <short pause> Notice the speed cancels out: faster particles go around bigger circles, in exactly the same time.`,
+          say: `Set the magnetic force equal to the centripetal force, and you get the radius: r equals m v over q B. A heavier or faster particle swings wider; a stronger field or a bigger charge curls it tighter. The time for one full circle is two pi m over q B. Notice the speed cancels out: faster particles go around bigger circles, in exactly the same time.`,
         },
         {
           figure: 'Sandbox: a charge enters a magnetic field',
@@ -94,7 +94,7 @@ export default {
         },
         {
           at: 'Put a rectangular loop in a field',
-          say: `Put a rectangular loop in a field, and the forces on its two long sides point opposite ways. They don't move the loop anywhere, but they TWIST it. The torque is N I A B, times the sine of theta: N turns, current I, area A, and theta, the angle between B and the loop's normal. <short pause> That twist is an electric motor.`,
+          say: `Put a rectangular loop in a field, and the forces on its two long sides point opposite ways. They don't move the loop anywhere, but they TWIST it. The torque is N I A B, times the sine of theta: N turns, current I, area A, and theta, the angle between B and the loop's normal. That twist is an electric motor.`,
         },
         {
           figure: 'Force on a current: wire and motor',
@@ -104,7 +104,7 @@ export default {
         {
           at: 'Classic mistakes',
           style: 'warn',
-          say: `Three classic mistakes. One: using the right-hand rule for an electron and forgetting to flip the answer. Two: drawing the force ALONG B, the way you would for an electric field. Magnetic forces are always perpendicular to B. And three: thinking a magnetic field can change a particle's speed. <short pause> It only ever changes the direction.`,
+          say: `Three classic mistakes. One: using the right-hand rule for an electron and forgetting to flip the answer. Two: drawing the force ALONG B, the way you would for an electric field. Magnetic forces are always perpendicular to B. And three: thinking a magnetic field can change a particle's speed. It only ever changes the direction.`,
         },
         {
           sel: '.quiz',

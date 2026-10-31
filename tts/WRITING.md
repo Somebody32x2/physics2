@@ -38,8 +38,11 @@ block, in order. A sandbox figure (no stepper) gets one block without `step`. En
   Spell out symbols (sigma, epsilon, lambda, tau, mu, delta, phi), units ("coulombs", "newtons per coulomb"),
   and "Physics One / Two". Never leave a symbol the voice would mangle (Greek letters, subscripts, ×, ±, ^).
 - Say what each symbol means the first time, briefly, when the page's equation card defines it.
-- Gemini cues: `<short pause>` before a reveal or between ideas (a few per block at most); CAPS on one or two
-  stressed words per block. No other tags, no stage directions in the text (direction belongs in `style`).
+- Gemini cues: CAPS on one or two stressed words per block. **No `<short pause>` or other tags**: Gemini
+  sometimes reads them aloud ("short pause"), even mid-sentence. Make pauses with punctuation instead: a full
+  stop, a colon, a dash, or "..." before a reveal. Direction belongs in `style`, never in the text.
+- After recording, scan the transcripts (tts/.raw/*.words.json) for "short"/"pause" and similar; list a bad
+  clip's hash in tts/rerecord.json and remove the cause from its text.
 - Tables and long lists: summarize and name a few examples, don't read every row.
 - For a sandbox, suggest one concrete thing to try, taken from the figure's note.
 
