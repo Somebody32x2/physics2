@@ -1,6 +1,6 @@
 /**
  * Narration for "The big picture" (src/lessons/overview.js). Written to be heard, not read: math is spoken,
- * long sentences are split, and Gemini cues are inline (<short pause>, CAPS for stress).
+ * long sentences are split, CAPS mark stress. (Its <short pause> tags predate tts/WRITING.md: do not copy them.)
  *
  * section: { voice, style?, perBlock?, blocks }   (one API call per section; see perBlock in tts/gen.mjs)   block: { say, at?, figure?, step?, style? }
  * at:     text from the page element(s) to highlight while the block plays (sel: a CSS selector instead)
